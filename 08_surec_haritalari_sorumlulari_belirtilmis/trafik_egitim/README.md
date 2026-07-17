@@ -1,0 +1,83 @@
+# Trafik Eğitim Süreç Haritaları
+
+Bu bölüm Trafik Eğitim Şube Müdürlüğünün eğitim programı, katılımcı organizasyonu, ölçme-değerlendirme ve trafik eğitim parkı işletme süreçlerini gösterir.
+
+---
+
+## TE-01 — Trafik eğitimi ve farkındalık programı
+
+**Süreç sahibi:** Trafik Eğitim Şube Müdürlüğü  
+**Girdiler:** Hedef grup talebi, kaza/risk verisi, okul/kurum takvimi, eğitim ihtiyacı, müfredat ve kapasite.  
+**Çıktılar:** Yıllık eğitim programı, materyal, katılım kaydı, ön/son test, memnuniyet ve faaliyet raporu.
+
+```mermaid
+flowchart TD
+    A([Yıllık plan veya eğitim talebi<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]) --> B[Hedef grup, yaş, risk ve öğrenme ihtiyacı]
+    B --> C[Kaza/ihlal verisi ve öncelikli davranışların analizi<br/>Sorumlu: Ölçme ve Değerlendirme Uzmanı]
+    C --> D[Eğitim amacı, içerik ve ölçme yöntemi<br/>Sorumlu: Eğitim Programları Sorumlusu]
+    D --> E[Okul/kurum, eğitmen, salon/park ve tarih planı<br/>Sorumlu: Okul ve Kurum Koordinatörü]
+    E --> F{Kaynak ve kapasite uygun mu?<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu}
+    F -- Hayır --> G[Tarih, grup veya yöntem revizyonu<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]
+    G --> E
+    F -- Evet --> H[Katılımcı ve veli/kurum bilgilendirmesi<br/>Sorumlu: Okul ve Kurum Koordinatörü]
+    H --> I[Ön test veya başlangıç ölçümü<br/>Sorumlu: Ölçme ve Değerlendirme Uzmanı]
+    I --> J[Teorik ve uygulamalı eğitim<br/>Sorumlu: Trafik Eğitim Uzmanı]
+    J --> K[Son test ve uygulama gözlemi<br/>Sorumlu: Ölçme ve Değerlendirme Uzmanı]
+    K --> L{Asgari kazanım sağlandı mı?<br/>Sorumlu: Ölçme ve Değerlendirme Uzmanı}
+    L -- Hayır --> M[Ek eğitim/tekrar uygulama<br/>Sorumlu: Trafik Eğitim Uzmanı]
+    M --> K
+    L -- Evet --> N[Katılım kaydı ve belge<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]
+    N --> O[Memnuniyet ve eğitmen değerlendirmesi<br/>Sorumlu: Ölçme ve Değerlendirme Uzmanı]
+    O --> P[Aylık/yıllık faaliyet ve etki raporu<br/>Sorumlu: Ölçme ve Değerlendirme Uzmanı]
+```
+
+**Önerilen KPI:** Katılımcı sayısı, planlanan eğitimin gerçekleşme oranı, ön/son test gelişimi, tekrar eğitim ihtiyacı, memnuniyet ve hedef gruba erişim oranı.
+
+---
+
+## TE-02 — Trafik eğitim parkı seans ve güvenlik işletimi
+
+**İşletme sahibi:** Trafik Eğitim Şube Müdürlüğü  
+**Fiziksel proje/bakım paydaşları:** Ulaşım Planlama, Fen İşleri, Destek Hizmetleri ve İSG  
+**Girdiler:** Onaylı eğitim programı, seans listesi, park kapasitesi, ekipman ve güvenlik kontrolü.  
+**Çıktılar:** Güvenli eğitim seansı, katılımcı/ekipman kaydı, olay/ramak kala kaydı ve bakım iş emri.
+
+```mermaid
+flowchart TD
+    A([Planlı park seansı<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli]) --> B[Katılımcı, eğitmen ve kapasite kontrolü]
+    B --> C[Günlük park, araç, işaret, enerji ve güvenlik kontrol listesi<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli]
+    C --> D{Park güvenli ve kullanılabilir mi?<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli}
+    D -- Hayır --> E[Alanı kapatma ve bakım/arıza iş emri<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli]
+    E --> F[Teknik müdahale ve güvenlik testi<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]
+    F --> C
+    D -- Evet --> G[Katılımcı kabulü ve güvenlik bilgilendirmesi<br/>Sorumlu: Okul ve Kurum Koordinatörü]
+    G --> H[Grup ve istasyon dağılımı<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]
+    H --> I[Uygulamalı eğitim seansı<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli]
+    I --> J{Kaza, ramak kala veya ekipman sorunu var mı?<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli}
+    J -- Evet --> K[İlk müdahale, kayıt ve gerekirse seansı durdurma<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli]
+    K --> L[Kök neden ve düzeltici faaliyet<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu]
+    L --> C
+    J -- Hayır --> M[Seans sonu değerlendirme<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli]
+    M --> N[Ekipman teslimi ve park kapanış kontrolü<br/>Sorumlu: Eğitim Parkı İşletme Sorumlusu / Eğitim Parkı Teknik Personeli]
+    N --> O[Seans, katılımcı ve faaliyet kaydı<br/>Sorumlu: Okul ve Kurum Koordinatörü]
+```
+
+**Temel kontroller:** Katılımcı yaşına uygun ekipman, kapasite sınırı, günlük saha kontrolü, acil durum prosedürü, kaza/ramak kala kaydı, çocuk ve kişisel veri güvenliği.
+
+---
+
+## TE-03 — Eğitim materyali hazırlama ve yayımlama
+
+```mermaid
+flowchart LR
+    A[Eğitim ihtiyacı<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu] --> B[İçerik hedefi ve hedef grup]
+    B --> C[Mevzuat/teknik doğrulama<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]
+    C --> D[Taslak materyal<br/>Sorumlu: Eğitim Materyali ve İletişim Uzmanı]
+    D --> E[Eğitim uzmanı ve ilgili teknik şube incelemesi<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]
+    E --> F{Doğru ve anlaşılır mı?<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu}
+    F -- Hayır --> D
+    F -- Evet --> G[Erişilebilirlik, görsel ve dil kontrolü<br/>Sorumlu: Eğitim Materyali ve İletişim Uzmanı]
+    G --> H[Yetkili onay ve sürüm numarası<br/>Sorumlu: Trafik Eğitim Şube Müdürü]
+    H --> I[Yayımlama/dağıtım<br/>Sorumlu: Eğitim Materyali ve İletişim Uzmanı]
+    I --> J[Geri bildirim ve periyodik güncelleme<br/>Sorumlu: Trafik Eğitim ilgili süreç pozisyonu]
+```
