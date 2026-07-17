@@ -1,0 +1,2 @@
+dokuman_id,dokuman_kodu,dokuman_adi,departman,belge_turu,revizyon,yururluk_tarihi,dosya_yolu,gizlilik_sinifi,kisisel_veri,mevzuat_dayanagi,guncellik_durumu,analiz_durumu,notlar
+ENV-0001,,,,,,,,Kurum İçi,Kontrol Edilecek,,Kontrol Edilecek,İncelenmedi,
