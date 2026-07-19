@@ -6,13 +6,24 @@ Bu dizin, Ulaşım Dairesi iş süreçlerinin departman bazında hazırlanmış 
 
 | Departman | Kapsanan ana süreçler |
 |---|---|
-| [`trafik_planlama/`](trafik_planlama/) | Ulaşım Ana Planı, yol/kavşak, geçiş yolu, yol kapatma, sinyalizasyon, işaretleme ve Trafik Yönetim Merkezi |
+| [`trafik_planlama/`](trafik_planlama/) | Ulaşım Ana Planı, yol/kavşak, geçiş yolu, yol kapatma, sinyalizasyon, işaretleme, Trafik Yönetim Merkezi ve otopark erişim uygunluğu |
 | [`ukome/`](ukome/) | Teknik teklif kabulü, alt komisyon, gündem, karar, dağıtım ve uygulama kapanışı |
-| [`toplu_ulasim/`](toplu_ulasim/) | Hat–güzergâh–zaman–tarife, ruhsat/vize/izin, kontrol ve durak yaşam döngüsü |
+| [`toplu_ulasim/`](toplu_ulasim/) | Hat–güzergâh–zaman–tarife, ruhsat/vize/izin, kontrol, durak yaşam döngüsü, ticari plaka, servis ve özel taşıma izinleri |
 | [`akilli_ulasim/`](akilli_ulasim/) | EDS/AUS, veri platformu, akıllı durak, entegrasyon ve kamera verisi yönetimi |
 | [`otogar/`](otogar/) | Araç giriş-çıkış, tahakkuk/tahsilat, peron ve teknik tesis hizmetleri |
 | [`trafik_egitim/`](trafik_egitim/) | Eğitim programı ve trafik eğitim parkı işletimi |
-| [`idari_isler/`](idari_isler/) | Evrak, ihale, sözleşme, hakediş, ödeme, bütçe, raporlama ve taşınır |
+| [`idari_isler/`](idari_isler/) | Evrak, ihale, sözleşme, hakediş, ödeme, bütçe, raporlama, taşınır ve taşıt görevlendirme |
+
+## Kaynak incelemesiyle eklenen süreçler
+
+- `TP-07` — Otopark erişim uygunluk belgesi
+- `TU-06` — Ticari plaka tahsis, devir ve iptal
+- `TU-07` — Servis aracı izin belgesi
+- `TU-08` — Yük nakli ve özel taşıma izni
+- `TU-09` — Ticari araç uygunluk, çalışma ruhsatı ve vize yenileme
+- `ID-07` — Taşıt görev emri ve hizmet aracı görevlendirme
+
+Karşılaştırma gerekçeleri için [`kaynak_karsilastirma_ve_ek_surecler.md`](kaynak_karsilastirma_ve_ek_surecler.md) dosyasına bakınız.
 
 ## Harita standardı
 
