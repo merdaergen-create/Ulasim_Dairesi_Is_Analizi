@@ -41,5 +41,14 @@ generator.RULES["idari_isler"] = [
     (r"araç ve sürücü uygunluğu|görev emri|kilometre|yakıt|araç teslim", "Personel ve İzin İşleri Sorumlusu"),
 ] + generator.RULES["idari_isler"]
 
+# Eski kural setinde kalan genel ifadeler somut varsayılan unvanlarla değiştirilir.
+for folder, rules in generator.RULES.items():
+    concrete_rules = []
+    for pattern, position in rules:
+        if "ilgili yalın pozisyonu" in position:
+            position = generator.DEFAULTS[folder]
+        concrete_rules.append((pattern, position))
+    generator.RULES[folder] = concrete_rules
+
 if __name__ == "__main__":
     generator.main()
