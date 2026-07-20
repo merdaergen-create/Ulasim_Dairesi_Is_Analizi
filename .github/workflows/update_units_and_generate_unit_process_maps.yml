@@ -1,0 +1,45 @@
+name: Birim bilgilerini ve yalın süreç haritalarını güncelle
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '14_yalin_organizasyon_semasi/**'
+      - '10_yalin_pozisyon_gorev_tanimlari/**'
+      - '11_yalin_surec_haritalari_sorumlulari_belirtilmis/**'
+      - 'scripts/update_units_and_generate_unit_process_maps.py'
+      - '.github/workflows/update_units_and_generate_unit_process_maps.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Önce görev tanımlarına birim ekle, sonra 15 numaralı haritaları üret
+        run: python scripts/update_units_and_generate_unit_process_maps.py
+
+      - name: Çıktıları doğrula
+        run: |
+          grep -R "**Birim:**" 10_yalin_pozisyon_gorev_tanimlari/*.md >/dev/null
+          test -f 15_yalin_surec_haritalari/README.md
+          grep -R "Birim:" 15_yalin_surec_haritalari/*/*.md >/dev/null
+
+      - name: Değişiklikleri main dalına kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 10_yalin_pozisyon_gorev_tanimlari 15_yalin_surec_haritalari
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok."
+          else
+            git commit -m "Görev tanımlarına birim bilgisini ve birimli süreç haritalarını ekle"
+            git push
+          fi
