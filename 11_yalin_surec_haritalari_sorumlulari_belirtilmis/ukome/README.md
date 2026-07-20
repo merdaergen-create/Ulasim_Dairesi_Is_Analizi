@@ -13,10 +13,10 @@ Bu bölüm Ulaşım Koordinasyon Şube Müdürlüğünün UKOME sekretaryası, k
 
 ```mermaid
 flowchart TD
-    A([Teknik şubeden teklif dosyası<br/>Sorumlu: UKOME ilgili yalın pozisyonu]) --> B[UKOME sekretaryası: kayıt ve dosya tamlık kontrolü<br/>Sorumlu: Gündem ve Dosya Kabul Sorumlusu]
-    B --> C{Zorunlu belgeler tam mı?<br/>Sorumlu: UKOME ilgili yalın pozisyonu}
+    A([Teknik şubeden teklif dosyası<br/>Sorumlu: UKOME Şube Müdürü]) --> B[UKOME sekretaryası: kayıt ve dosya tamlık kontrolü<br/>Sorumlu: Gündem ve Dosya Kabul Sorumlusu]
+    B --> C{Zorunlu belgeler tam mı?<br/>Sorumlu: UKOME Şube Müdürü}
     C -- Hayır --> D[Eksik belge ve düzeltme listesi<br/>Sorumlu: Gündem ve Dosya Kabul Sorumlusu]
-    D --> E[Teknik şube dosyayı tamamlar<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    D --> E[Teknik şube dosyayı tamamlar<br/>Sorumlu: UKOME Şube Müdürü]
     E --> B
     C -- Evet --> F[Yetki, mevzuat ve önceki karar taraması<br/>Sorumlu: Arşiv ve Karar Araştırma Personeli]
     F --> G{Alt komisyon gerekli mi?<br/>Sorumlu: Alt Komisyon Koordinatörü}
@@ -25,14 +25,14 @@ flowchart TD
     I --> J[Alt komisyon raporu<br/>Sorumlu: Alt Komisyon Koordinatörü]
     G -- Hayır --> K[Gündem maddesi hazırlanması<br/>Sorumlu: Gündem ve Dosya Kabul Sorumlusu]
     J --> K
-    K --> L[Gündem ve dosyaların üyelere süresinde gönderilmesi<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    K --> L[Gündem ve dosyaların üyelere süresinde gönderilmesi<br/>Sorumlu: UKOME Şube Müdürü]
     L --> M[UKOME toplantısı, görüşme ve oylama<br/>Sorumlu: UKOME Şube Müdürü]
     M --> N{Karar sonucu<br/>Sorumlu: UKOME Şube Müdürü}
-    N -- İade --> O[Gerekçe ile teknik şubeye iade<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    N -- İade --> O[Gerekçe ile teknik şubeye iade<br/>Sorumlu: UKOME Şube Müdürü]
     O --> E
     N -- Ret --> P[Gerekçeli ret kararının yazılması<br/>Sorumlu: UKOME Karar Yazım Uzmanı]
     N -- Kabul --> Q[Karar metni ve uygulama şartları<br/>Sorumlu: UKOME Karar Yazım Uzmanı]
-    P --> R[Üye imzaları ve kesinleşme kontrolü<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    P --> R[Üye imzaları ve kesinleşme kontrolü<br/>Sorumlu: UKOME Şube Müdürü]
     Q --> R
     R --> S[Karar numarası, e-imza ve arşiv<br/>Sorumlu: Dijital UKOME Sistem Sorumlusu]
     S --> T[İlgili kurum, birim ve başvuru sahibine dağıtım<br/>Sorumlu: Karar Dağıtım ve Tebligat Personeli]
@@ -59,24 +59,24 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([İmzalı UKOME kararı<br/>Sorumlu: UKOME ilgili yalın pozisyonu]) --> B[Karar maddelerinin görev ve süre bazında ayrıştırılması<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    A([İmzalı UKOME kararı<br/>Sorumlu: UKOME Şube Müdürü]) --> B[Karar maddelerinin görev ve süre bazında ayrıştırılması<br/>Sorumlu: UKOME Şube Müdürü]
     B --> C[Her madde için uygulama sahibi ve hedef tarih<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
-    C --> D[EBYS/karar takip sistemi üzerinden bildirim<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    C --> D[EBYS/karar takip sistemi üzerinden bildirim<br/>Sorumlu: UKOME Şube Müdürü]
     D --> E[Uygulama sahibi: iş planı ve kaynak kontrolü<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
-    E --> F{Ek proje, bütçe veya ihale gerekli mi?<br/>Sorumlu: UKOME ilgili yalın pozisyonu}
-    F -- Evet --> G[İlgili teknik/idari hazırlık süreci<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    E --> F{Ek proje, bütçe veya ihale gerekli mi?<br/>Sorumlu: UKOME Şube Müdürü}
+    F -- Evet --> G[İlgili teknik/idari hazırlık süreci<br/>Sorumlu: UKOME Şube Müdürü]
     G --> H[Uygulama<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
     F -- Hayır --> H
     H --> I[Fotoğraf, proje, tutanak, belge veya sistem kaydı yükleme<br/>Sorumlu: UKOME Karar Yazım Uzmanı]
     I --> J[UKOME sekretaryası: kanıt ve süre kontrolü<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
-    J --> K{Karar tam uygulanmış mı?<br/>Sorumlu: UKOME ilgili yalın pozisyonu}
+    J --> K{Karar tam uygulanmış mı?<br/>Sorumlu: UKOME Şube Müdürü}
     K -- Hayır --> L[Düzeltme veya eksik uygulama bildirimi<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
-    L --> M{Hedef süre aşıldı mı?<br/>Sorumlu: UKOME ilgili yalın pozisyonu}
+    L --> M{Hedef süre aşıldı mı?<br/>Sorumlu: UKOME Şube Müdürü}
     M -- Hayır --> H
-    M -- Evet --> N[Daire Başkanı/Genel Sekreterlik escalation raporu<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    M -- Evet --> N[Daire Başkanı/Genel Sekreterlik escalation raporu<br/>Sorumlu: UKOME Şube Müdürü]
     N --> H
-    K -- Evet --> O[Gerekirse ortak saha doğrulaması<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
-    O --> P{Saha uygun mu?<br/>Sorumlu: UKOME ilgili yalın pozisyonu}
+    K -- Evet --> O[Gerekirse ortak saha doğrulaması<br/>Sorumlu: UKOME Şube Müdürü]
+    O --> P{Saha uygun mu?<br/>Sorumlu: UKOME Şube Müdürü}
     P -- Hayır --> L
     P -- Evet --> Q[Karar maddesinin kapanışı<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
     Q --> R[Karar performans ve gecikme raporu<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
@@ -95,15 +95,15 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A[Başvuru<br/>Sorumlu: UKOME ilgili yalın pozisyonu] --> B[Ulaşım Koordinasyon: konu ve yetki sınıflandırması<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
-    B --> C{UKOME yetkisinde mi?<br/>Sorumlu: UKOME ilgili yalın pozisyonu}
+    A[Başvuru<br/>Sorumlu: UKOME Şube Müdürü] --> B[Ulaşım Koordinasyon: konu ve yetki sınıflandırması<br/>Sorumlu: UKOME Şube Müdürü]
+    B --> C{UKOME yetkisinde mi?<br/>Sorumlu: UKOME Şube Müdürü}
     C -- Hayır --> D[Yetkili birime/kuruma yönlendirme<br/>Sorumlu: Kurumlar Arası Koordinasyon Uzmanı]
-    C -- Evet --> E[İlgili teknik şubenin belirlenmesi<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
-    E --> F[Teknik inceleme ve saha/veri çalışması<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
-    F --> G{Kurul kararı gerekli mi?<br/>Sorumlu: UKOME ilgili yalın pozisyonu}
+    C -- Evet --> E[İlgili teknik şubenin belirlenmesi<br/>Sorumlu: UKOME Şube Müdürü]
+    E --> F[Teknik inceleme ve saha/veri çalışması<br/>Sorumlu: UKOME Şube Müdürü]
+    F --> G{Kurul kararı gerekli mi?<br/>Sorumlu: UKOME Şube Müdürü}
     G -- Hayır --> H[Teknik/idari cevap ve başvuru kapanışı<br/>Sorumlu: Karar Uygulama Takip Uzmanı]
-    G -- Evet --> I[Standart UKOME teklif dosyası<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
-    I --> J[UK-01 gündem ve karar süreci<br/>Sorumlu: UKOME ilgili yalın pozisyonu]
+    G -- Evet --> I[Standart UKOME teklif dosyası<br/>Sorumlu: UKOME Şube Müdürü]
+    I --> J[UK-01 gündem ve karar süreci<br/>Sorumlu: UKOME Şube Müdürü]
     J --> K[Başvuru sahibine karar bildirimi<br/>Sorumlu: Karar Dağıtım ve Tebligat Personeli]
 ```
 

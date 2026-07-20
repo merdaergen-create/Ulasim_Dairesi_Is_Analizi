@@ -20,11 +20,11 @@ flowchart TD
     D -- Hayır --> E[Eksik belge bildirimi<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli]
     E --> B
     D -- Evet --> F[Mevzuat, hak sahipliği, borç ve kısıt kontrolü<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı]
-    F --> G{UKOME veya başka kurul kararı gerekli mi?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
-    G -- Evet --> H[Teknik/idari teklif dosyasının hazırlanması<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
-    H --> I[UKOME/kurul karar süreci<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
-    I --> J{Karar olumlu mu?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
-    J -- Hayır --> K[Gerekçeli ret ve kayıt kapanışı<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    F --> G{UKOME veya başka kurul kararı gerekli mi?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
+    G -- Evet --> H[Teknik/idari teklif dosyasının hazırlanması<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
+    H --> I[UKOME/kurul karar süreci<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
+    I --> J{Karar olumlu mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
+    J -- Hayır --> K[Gerekçeli ret ve kayıt kapanışı<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     J -- Evet --> L[Ücret, vergi, harç ve tahakkuk işlemleri<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
     G -- Hayır --> L
     L --> M[Tahsilat doğrulaması<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
@@ -60,14 +60,14 @@ flowchart TD
     F --> G[Güzergâh, okul/kurum ve hizmet sözleşmesi doğrulaması<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu]
     G --> H{Araç uygunluk kontrolü gerekli mi?<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı}
     H -- Evet --> I[Standart araç uygunluk kontrolü<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı]
-    I --> J{Uygun mu?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
-    J -- Hayır --> K[Uygunsuzluk listesi ve düzeltme süresi<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    I --> J{Uygun mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
+    J -- Hayır --> K[Uygunsuzluk listesi ve düzeltme süresi<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     K --> I
     J -- Evet --> L[Ücret ve tahakkuk işlemleri<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
     H -- Hayır --> L
     L --> M[Tahsilat doğrulaması<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
-    M --> N{Tüm şartlar sağlandı mı?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
-    N -- Hayır --> O[Gerekçeli ret veya bekleme<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    M --> N{Tüm şartlar sağlandı mı?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
+    N -- Hayır --> O[Gerekçeli ret veya bekleme<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     N -- Evet --> P[İzin belgesi, e-imza ve kayıt<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli]
     P --> Q[Denetim, güzergâh ve süre takip sistemine aktarım<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu]
     Q --> R[Yenileme öncesi bildirim<br/>Sorumlu: Ruhsat ve Vize Birim Sorumlusu]
@@ -96,17 +96,17 @@ flowchart TD
     E --> C
     D -- Evet --> F[Yük/yolcu türü, kapasite ve güvenlik şartlarının kontrolü<br/>Sorumlu: Filo ve Kapasite Planlama Uzmanı]
     F --> G[Güzergâh, yol kapasitesi, saat ve trafik etkisi analizi<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu]
-    G --> H{Kurum/kolluk/UKOME görüşü gerekli mi?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
-    H -- Evet --> I[İlgili kurum görüşlerinin alınması<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
-    I --> J{Görüşler olumlu mu?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
+    G --> H{Kurum/kolluk/UKOME görüşü gerekli mi?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
+    H -- Evet --> I[İlgili kurum görüşlerinin alınması<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
+    I --> J{Görüşler olumlu mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
     J -- Hayır --> K[Alternatif güzergâh, süre veya şart revizyonu<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu]
     K --> G
-    J -- Evet --> L[İzin şartları ve denetim koşulları<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    J -- Evet --> L[İzin şartları ve denetim koşulları<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     H -- Hayır --> L
     L --> M[Ücret ve tahakkuk işlemleri<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
     M --> N[Tahsilat doğrulaması<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
     N --> O[İzin belgesinin hazırlanması ve e-imza<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli]
-    O --> P[Denetim ve süre takip sistemine aktarım<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    O --> P[Denetim ve süre takip sistemine aktarım<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     P --> Q[İzin süresi sonunda kapanış veya yenileme<br/>Sorumlu: Ruhsat ve Vize Birim Sorumlusu]
 ```
 
@@ -131,17 +131,17 @@ flowchart TD
     D -- Hayır --> E[Eksik/geçersiz belge bildirimi<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli]
     E --> C
     D -- Evet --> F[Standart araç uygunluk muayenesi<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı]
-    F --> G{Araç uygun mu?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
-    G -- Hayır --> H[Uygunsuzluk listesi ve düzeltme süresi<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    F --> G{Araç uygun mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
+    G -- Hayır --> H[Uygunsuzluk listesi ve düzeltme süresi<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     H --> F
-    G -- Evet --> I[Ceza, borç, önceki ihlal ve kısıt kontrolü<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    G -- Evet --> I[Ceza, borç, önceki ihlal ve kısıt kontrolü<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     I --> J[Ücret ve tahakkuk işlemleri<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
     J --> K[Tahsilat doğrulaması<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli]
-    K --> L{Tüm koşullar sağlandı mı?<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu}
-    L -- Hayır --> M[Gerekçeli ret veya bekleme<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    K --> L{Tüm koşullar sağlandı mı?<br/>Sorumlu: Toplu Taşıma Şube Müdürü}
+    L -- Hayır --> M[Gerekçeli ret veya bekleme<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     L -- Evet --> N[Ruhsat/vize belgesinin hazırlanması<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli]
     N --> O[Yetkili kontrol, e-imza ve süre kaydı<br/>Sorumlu: Dijital Başvuru Süreç Uzmanı]
-    O --> P[Denetim sistemine aktarım<br/>Sorumlu: Toplu Taşıma veya Ruhsat ilgili yalın pozisyonu]
+    O --> P[Denetim sistemine aktarım<br/>Sorumlu: Toplu Taşıma Şube Müdürü]
     P --> Q[Yenileme öncesi otomatik bildirim<br/>Sorumlu: Ruhsat ve Vize Birim Sorumlusu]
 ```
 

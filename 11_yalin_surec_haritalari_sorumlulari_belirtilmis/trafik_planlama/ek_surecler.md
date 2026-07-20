@@ -14,30 +14,30 @@ Bu dosya, kaynak belgelerde yer aldığı halde mevcut `TP-01–TP-06` haritalar
 
 ```mermaid
 flowchart TD
-    A([Otopark erişim uygunluğu başvurusu<br/>Sorumlu: Yol ve Kavşak Tasarım Sorumlusu]) --> B[Başvuru ve proje eklerinin kayıt altına alınması<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
-    B --> C{Zorunlu belgeler tam mı?<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu}
-    C -- Hayır --> D[Eksik belge ve proje bildirim listesi<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
+    A([Otopark erişim uygunluğu başvurusu<br/>Sorumlu: Yol ve Kavşak Tasarım Sorumlusu]) --> B[Başvuru ve proje eklerinin kayıt altına alınması<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
+    B --> C{Zorunlu belgeler tam mı?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü}
+    C -- Hayır --> D[Eksik belge ve proje bildirim listesi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
     D --> B
-    C -- Evet --> E[İmar durumu, yetki alanı ve yol sorumluluğu kontrolü<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
-    E --> F[Saha incelemesi ve mevcut trafik düzeninin tespiti<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
+    C -- Evet --> E[İmar durumu, yetki alanı ve yol sorumluluğu kontrolü<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
+    E --> F[Saha incelemesi ve mevcut trafik düzeninin tespiti<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
     F --> G[Araç giriş-çıkış görüş mesafesi ve manevra analizi<br/>Sorumlu: Yol ve Kavşak Tasarım Sorumlusu]
     G --> H[Yaya, bisiklet, engelli erişimi ve kaldırım sürekliliği kontrolü<br/>Sorumlu: Trafik Güvenliği ve Sürdürülebilir Ulaşım Uzmanı]
     H --> I[Yakın kavşak, durak, sinyal, geçit ve yol güvenliği etkisi<br/>Sorumlu: Sinyalizasyon Proje ve İşletme Sorumlusu]
-    I --> J{Erişim teknik olarak uygun mu?<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu}
-    J -- Hayır --> K[Alternatif giriş-çıkış veya proje revizyon talebi<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
-    K --> L{Revize proje sunuldu mu?<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu}
-    L -- Hayır --> M[Gerekçeli ret ve dosya kapanışı<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
+    I --> J{Erişim teknik olarak uygun mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü}
+    J -- Hayır --> K[Alternatif giriş-çıkış veya proje revizyon talebi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
+    K --> L{Revize proje sunuldu mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü}
+    L -- Hayır --> M[Gerekçeli ret ve dosya kapanışı<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
     L -- Evet --> F
-    J -- Evet --> N{UKOME veya başka kurul kararı gerekli mi?<br/>Sorumlu: UKOME Şube Müdürlüğü ilgili yalın pozisyonu}
+    J -- Evet --> N{UKOME veya başka kurul kararı gerekli mi?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü}
     N -- Evet --> O[Standart teknik teklif dosyasının hazırlanması<br/>Sorumlu: Teknik Proje Kontrol Mühendisi]
-    O --> P[UKOME/ilgili kurul karar süreci<br/>Sorumlu: UKOME Şube Müdürlüğü ilgili yalın pozisyonu]
-    P --> Q{Karar olumlu mu?<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu}
+    O --> P[UKOME/ilgili kurul karar süreci<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
+    P --> Q{Karar olumlu mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü}
     Q -- Hayır --> M
-    Q -- Evet --> R[Uygunluk şartları ve uygulama koşulları<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
+    Q -- Evet --> R[Uygunluk şartları ve uygulama koşulları<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
     N -- Hayır --> R
     R --> S[Yetkili teknik onay ve uygunluk belgesinin düzenlenmesi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
-    S --> T[Başvuru sahibine bildirim ve ilgili kurumlara dağıtım<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
-    T --> U[Gerekirse uygulama sonrası saha doğrulaması<br/>Sorumlu: Ulaşım Planlama ilgili yalın pozisyonu]
+    S --> T[Başvuru sahibine bildirim ve ilgili kurumlara dağıtım<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
+    T --> U[Gerekirse uygulama sonrası saha doğrulaması<br/>Sorumlu: Ulaşım Planlama Şube Müdürü]
     U --> V[CBS, belge ve kapanış kaydı<br/>Sorumlu: CBS ve Ulaşım Envanteri Uzmanı]
 ```
 
