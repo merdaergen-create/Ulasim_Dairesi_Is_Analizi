@@ -3,6 +3,7 @@
 Bu pozisyonlar düşük iş hacminde her şubede tekrarlanmaz; ortak hizmet modeliyle bütün şubelere hizmet verir.
 
 ## 1. Hukuk ve Mevzuat Koordinatörü
+**Birim:** Daire Geneli Ortak Uzmanlık Desteği.
 **Ana konum:** İdari ve Mali İşler; Hukuk Müşavirliğiyle koordineli.
 
 **Amaç:** Ulaşım süreçlerinin yetki ve mevzuat uygunluğunu izlemek.
@@ -14,6 +15,7 @@ Bu pozisyonlar düşük iş hacminde her şubede tekrarlanmaz; ortak hizmet mode
 **KPI:** Zamanında görüş, açık mevzuat riski, güncellenen doküman oranı.
 
 ## 2. CBS Yöneticisi
+**Birim:** Daire Geneli Ortak Uzmanlık Desteği.
 **Ana konum:** Ulaşım Planlama.
 
 **Amaç:** Daire genelindeki mekânsal veri ve ulaşım varlık standardını yönetmek.
@@ -23,6 +25,7 @@ Bu pozisyonlar düşük iş hacminde her şubede tekrarlanmaz; ortak hizmet mode
 **KPI:** Mekânsal veri tamlığı, mükerrer varlık, güncelleme gecikmesi.
 
 ## 3. Veri Yönetişimi Sorumlusu
+**Birim:** Daire Geneli Ortak Uzmanlık Desteği.
 **Ana konum:** AUS ve TKM.
 
 **Amaç:** Veri sahipliği, kalite, erişim, paylaşım ve saklama ilkelerini kurumsallaştırmak.
@@ -32,6 +35,7 @@ Bu pozisyonlar düşük iş hacminde her şubede tekrarlanmaz; ortak hizmet mode
 **KPI:** Veri kalite skoru, sahipsiz veri kaynağı, yetkisiz erişim olayı.
 
 ## 4. Proje Yönetim Ofisi Uzmanı
+**Birim:** Daire Geneli Ortak Uzmanlık Desteği.
 **Ana konum:** Daire Başkanlığı veya İdari ve Mali İşler.
 
 **Amaç:** Proje portföyü, takvim, maliyet, risk ve bağımlılıkları tek görünümde yönetmek.
@@ -41,6 +45,7 @@ Bu pozisyonlar düşük iş hacminde her şubede tekrarlanmaz; ortak hizmet mode
 **KPI:** Zamanında kilometre taşı, bütçe sapması, açık kritik risk.
 
 ## 5. Kalite ve Süreç Yönetimi Uzmanı
+**Birim:** Daire Geneli Ortak Uzmanlık Desteği.
 **Ana konum:** Daire Başkanlığı / İç Kontrol.
 
 **Amaç:** Süreç haritaları, RACI, KPI ve iyileştirme sistemini yönetmek.
@@ -50,6 +55,7 @@ Bu pozisyonlar düşük iş hacminde her şubede tekrarlanmaz; ortak hizmet mode
 **KPI:** Güncel süreç oranı, kapanan iyileştirme, tekrar iş ve çevrim süresi değişimi.
 
 ## 6. KVKK ve Bilgi Güvenliği Koordinatörü
+**Birim:** Daire Geneli Ortak Uzmanlık Desteği.
 **Ana konum:** AUS, Bilgi İşlem ve Hukuk ortak modeli.
 
 **Amaç:** Kamera, plaka, konum, başvuru ve personel verilerinin güvenli ve hukuka uygun işlenmesini koordine etmek.
@@ -59,6 +65,7 @@ Bu pozisyonlar düşük iş hacminde her şubede tekrarlanmaz; ortak hizmet mode
 **KPI:** Açık veri koruma riski, log kapsama oranı, ihlal/olay kapanış süresi.
 
 ## 7. İş Sağlığı ve Güvenliği Koordinatörü
+**Birim:** Daire Geneli Ortak Uzmanlık Desteği.
 **Ana konum:** Kurumsal İSG yapısıyla koordineli ortak görev.
 
 **Amaç:** Trafiğe açık saha, otogar, eğitim parkı ve teknik tesis çalışmalarında güvenliği sağlamak.
