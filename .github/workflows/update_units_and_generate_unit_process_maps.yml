@@ -28,9 +28,9 @@ jobs:
 
       - name: Çıktıları doğrula
         run: |
-          grep -R "**Birim:**" 10_yalin_pozisyon_gorev_tanimlari/*.md >/dev/null
+          grep -R -F "**Birim:**" 10_yalin_pozisyon_gorev_tanimlari/*.md >/dev/null
           test -f 15_yalin_surec_haritalari/README.md
-          grep -R "Birim:" 15_yalin_surec_haritalari/*/*.md >/dev/null
+          grep -R -F "Birim:" 15_yalin_surec_haritalari/*/*.md >/dev/null
 
       - name: Değişiklikleri main dalına kaydet
         run: |
