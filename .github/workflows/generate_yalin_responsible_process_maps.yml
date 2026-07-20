@@ -1,0 +1,43 @@
+name: Yalın sorumlu süreç haritalarını üret
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '05_surec_haritalari/**'
+      - '10_yalin_pozisyon_gorev_tanimlari/**'
+      - 'scripts/generate_yalin_responsible_process_maps.py'
+      - '.github/workflows/generate_yalin_responsible_process_maps.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Yalın sorumlu haritaları üret
+        run: python scripts/generate_yalin_responsible_process_maps.py
+
+      - name: Değişiklikleri doğrula
+        run: |
+          test -f 11_yalin_surec_haritalari_sorumlulari_belirtilmis/README.md
+          grep -R "Sorumlu:" 11_yalin_surec_haritalari_sorumlulari_belirtilmis/*/*.md >/dev/null
+
+      - name: Üretilen haritaları main dalına kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_yalin_surec_haritalari_sorumlulari_belirtilmis
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok."
+          else
+            git commit -m "Yalın süreç haritalarını koruyarak sorumlu pozisyonları ekle"
+            git push
+          fi
