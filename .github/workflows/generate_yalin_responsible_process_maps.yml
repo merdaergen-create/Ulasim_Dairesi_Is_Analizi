@@ -7,6 +7,7 @@ on:
       - '05_surec_haritalari/**'
       - '10_yalin_pozisyon_gorev_tanimlari/**'
       - 'scripts/generate_yalin_responsible_process_maps.py'
+      - 'scripts/generate_yalin_responsible_process_maps_v2.py'
       - '.github/workflows/generate_yalin_responsible_process_maps.yml'
   workflow_dispatch:
 
@@ -23,12 +24,13 @@ jobs:
           fetch-depth: 0
 
       - name: Yalın sorumlu haritaları üret
-        run: python scripts/generate_yalin_responsible_process_maps.py
+        run: python scripts/generate_yalin_responsible_process_maps_v2.py
 
       - name: Değişiklikleri doğrula
         run: |
           test -f 11_yalin_surec_haritalari_sorumlulari_belirtilmis/README.md
           grep -R "Sorumlu:" 11_yalin_surec_haritalari_sorumlulari_belirtilmis/*/*.md >/dev/null
+          ! grep -R "ilgili yalın pozisyonu" 11_yalin_surec_haritalari_sorumlulari_belirtilmis/*/*.md
 
       - name: Üretilen haritaları main dalına kaydet
         run: |
@@ -38,6 +40,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "Değişiklik yok."
           else
-            git commit -m "Yalın süreç haritalarını koruyarak sorumlu pozisyonları ekle"
+            git commit -m "Yalın süreç haritalarını koruyarak kesin sorumlu pozisyonları ekle"
             git push
           fi
