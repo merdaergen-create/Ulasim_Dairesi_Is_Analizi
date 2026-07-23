@@ -1,0 +1,47 @@
+name: 15 süreç haritalarını güncel pozisyonlarla eşleştir
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '09_yalin_pozisyonlari/**'
+      - '15_yalin_surec_haritalari/**'
+      - 'scripts/sync_15_process_maps_with_09_positions.py'
+      - '.github/workflows/sync_15_process_maps_with_09_positions.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Güncel pozisyon ve birimleri diyagramlara işle
+        run: python scripts/sync_15_process_maps_with_09_positions.py
+
+      - name: Çıktıları doğrula
+        run: |
+          test -f 15_yalin_surec_haritalari/README.md
+          grep -R -F 'Sorumlu:' 15_yalin_surec_haritalari/*/*.md >/dev/null
+          grep -R -F 'Birim:' 15_yalin_surec_haritalari/*/*.md >/dev/null
+          ! grep -R -F 'Ulaşım Veri Platformu ve Analitik Sorumlusu' 15_yalin_surec_haritalari/*/*.md
+          ! grep -R -F 'TKM Operasyon Birim Sorumlusu' 15_yalin_surec_haritalari/*/*.md
+          ! grep -R -F 'Tarife, Maliyet ve Kapasite Planlama Uzmanı' 15_yalin_surec_haritalari/*/*.md
+
+      - name: Değişiklikleri main dalına kaydet
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add 15_yalin_surec_haritalari
+          if git diff --cached --quiet; then
+            echo 'Değişiklik yok.'
+          else
+            git commit -m '15 süreç haritalarındaki pozisyon ve birim bilgilerini güncelle'
+            git push
+          fi
