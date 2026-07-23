@@ -18,7 +18,7 @@ flowchart TD
     C -- Hayır --> D[Eksik belge ve düzeltme listesi<br/>Sorumlu: Gündem ve Dosya Kabul Sorumlusu<br/>Birim: Gündem ve Dosya Kabul Birimi]
     D --> E[Teknik şube dosyayı tamamlar<br/>Sorumlu: UKOME Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     E --> B
-    C -- Evet --> F[Yetki, mevzuat ve önceki karar taraması<br/>Sorumlu: Arşiv ve Karar Araştırma Personeli<br/>Birim: UKOME Şube Müdürlüğü Yönetimi]
+    C -- Evet --> F[Yetki, mevzuat ve önceki karar taraması<br/>Sorumlu: Arşiv ve Karar Araştırma Personeli<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     F --> G{Alt komisyon gerekli mi?<br/>Sorumlu: Alt Komisyon Koordinatörü<br/>Birim: UKOME Şube Müdürlüğü Yönetimi}
     G -- Evet --> H[Alt komisyon üyeleri ve toplantı tarihi<br/>Sorumlu: Alt Komisyon Koordinatörü<br/>Birim: UKOME Şube Müdürlüğü Yönetimi]
     H --> I[Saha/teknik inceleme ve kurum görüşleri<br/>Sorumlu: Alt Komisyon Koordinatörü<br/>Birim: UKOME Şube Müdürlüğü Yönetimi]

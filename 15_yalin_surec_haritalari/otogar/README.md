@@ -13,30 +13,30 @@ Bu bölüm otogar araç giriş-çıkış, tahakkuk/tahsilat, peron ve teknik tes
 
 ```mermaid
 flowchart TD
-    A([Araç otogar girişine gelir<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]) --> B[Plaka tanıma veya gişe kaydı<br/>Sorumlu: Gişe ve Tahakkuk Sorumlusu<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
+    A([Araç otogar girişine gelir<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]) --> B[Plaka tanıma veya gişe kaydı<br/>Sorumlu: Gişe, Tahakkuk ve Tarife Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     B --> C[Firma, sefer ve yetki belgesi doğrulama<br/>Sorumlu: Firma ve Yetki Belgesi Kontrol Personeli<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
     C --> D{Girişe uygun mu?<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     D -- Hayır --> E[Ret/istisna kaydı ve işletme sorumlusuna bildirim<br/>Sorumlu: Terminal Operasyon Birim Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
     D -- Evet --> F[Araç sınıfı ve tarife sürümünün belirlenmesi<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    F --> G[Otomatik tahakkuk<br/>Sorumlu: Gişe ve Tahakkuk Sorumlusu<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
+    F --> G[Otomatik tahakkuk<br/>Sorumlu: Gişe, Tahakkuk ve Tarife Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     G --> H{Muafiyet veya özel karar var mı?<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     H -- Evet --> I[Yetki ve dayanak doğrulaması<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    H -- Hayır --> J[Tahsilat<br/>Sorumlu: Gişe ve Tahakkuk Sorumlusu<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
+    H -- Hayır --> J[Tahsilat<br/>Sorumlu: Gişe, Tahakkuk ve Tarife Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     I --> J
-    J --> K[Makbuz ve mali sistem kaydı<br/>Sorumlu: Gişe ve Tahakkuk Sorumlusu<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
-    K --> L[Peron/işletme sürecine aktarım<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    J --> K[Makbuz ve mali sistem kaydı<br/>Sorumlu: Gişe, Tahakkuk ve Tarife Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    K --> L[Peron/işletme sürecine aktarım<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     L --> M[Araç çıkış kaydı<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    M --> N{Giriş, tahakkuk, tahsilat ve çıkış eşleşiyor mu?<br/>Sorumlu: Gişe ve Tahakkuk Sorumlusu<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi}
+    M --> N{Giriş, tahakkuk, tahsilat ve çıkış eşleşiyor mu?<br/>Sorumlu: Gişe, Tahakkuk ve Tarife Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği}
     N -- Hayır --> O[İstisna incelemesi ve yetkili düzeltme<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     O --> P[Çift onay ve log<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    P --> Q[Gün sonu mutabakat<br/>Sorumlu: Kasa ve Gelir Mutabakat Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    P --> Q[Gün sonu mutabakat<br/>Sorumlu: Kasa ve Gelir Mutabakat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     N -- Evet --> Q
-    Q --> R[Kasa, banka/POS ve mali sistem karşılaştırması<br/>Sorumlu: Kasa ve Gelir Mutabakat Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    Q --> R[Kasa, banka/POS ve mali sistem karşılaştırması<br/>Sorumlu: Kasa ve Gelir Mutabakat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     R --> S{Fark var mı?<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    S -- Evet --> T[Fark tutanağı ve inceleme<br/>Sorumlu: Kasa ve Gelir Mutabakat Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    S -- Evet --> T[Fark tutanağı ve inceleme<br/>Sorumlu: Kasa ve Gelir Mutabakat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     S -- Hayır --> U[Gün sonu kapama<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     T --> U
-    U --> V[Aylık araç ve gelir raporu<br/>Sorumlu: Faaliyet ve Gelir Raporlama Uzmanı<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    U --> V[Aylık araç ve gelir raporu<br/>Sorumlu: Faaliyet ve Gelir Raporlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
 ```
 
 **Temel kontroller:** Tarife sürüm numarası, manuel plaka/tutar değişikliğinde çift onay, muafiyet dayanağı, günlük kasa mutabakatı, mali sistem entegrasyonu.
@@ -54,16 +54,16 @@ flowchart TD
 ```mermaid
 flowchart TD
     A([Onaylı sefer veya araç giriş kaydı<br/>Sorumlu: Firma ve Yetki Belgesi Kontrol Personeli<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]) --> B[Günlük sefer ve peron kapasite planı<br/>Sorumlu: Firma ve Yetki Belgesi Kontrol Personeli<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
-    B --> C[Uygun peronun kurallara göre atanması<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
-    C --> D{Peron çakışması var mı?<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi}
-    D -- Evet --> E[Öncelik, süre ve alternatif peron analizi<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    B --> C[Uygun peronun kurallara göre atanması<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    C --> D{Peron çakışması var mı?<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği}
+    D -- Evet --> E[Öncelik, süre ve alternatif peron analizi<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     E --> C
     D -- Hayır --> F[Firma/şoföre dijital peron bildirimi<br/>Sorumlu: Firma ve Yetki Belgesi Kontrol Personeli<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
-    F --> G[Araç perona yönlendirilir<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    F --> G[Araç perona yönlendirilir<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     G --> H[İndirme-bindirme, bekleme ve hareket kontrolü<br/>Sorumlu: Terminal Operasyon Birim Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
     H --> I{Gecikme, ihlal veya olay var mı?<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     I -- Evet --> J[Olay kaydı ve ilgili birim/kolluk koordinasyonu<br/>Sorumlu: Terminal Güvenlik Koordinatörü<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
-    J --> K[Gerekirse peron yeniden planlama<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    J --> K[Gerekirse peron yeniden planlama<br/>Sorumlu: Peron Planlama ve Tahsis Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     K --> H
     I -- Hayır --> L[Seferin tamamlanması ve peronun boşaltılması<br/>Sorumlu: Firma ve Yetki Belgesi Kontrol Personeli<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi]
     L --> M[Sistem ve saha kaydının kapatılması<br/>Sorumlu: Terminal Operasyon Birim Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
@@ -114,14 +114,14 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A[Gişe ve plaka kayıtları<br/>Sorumlu: Gişe ve Tahakkuk Sorumlusu<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi] --> E[Veri kalite kontrolü<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
+    A[Gişe ve plaka kayıtları<br/>Sorumlu: Gişe, Tahakkuk ve Tarife Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği] --> E[Veri kalite kontrolü<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     B[Peron ve sefer kayıtları<br/>Sorumlu: Firma ve Yetki Belgesi Kontrol Personeli<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi] --> E
     C[Arıza ve işletme olayları<br/>Sorumlu: Terminal Operasyon Birim Sorumlusu<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi] --> E
-    D[Mali sistem tahsilatları<br/>Sorumlu: Gişe ve Tahakkuk Sorumlusu<br/>Birim: Gişe, Tahakkuk ve Gelir Birimi] --> E
+    D[Mali sistem tahsilatları<br/>Sorumlu: Gişe, Tahakkuk ve Tarife Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği] --> E
     E --> F{Kayıtlar tutarlı mı?<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     F -- Hayır --> G[Kaynak sistem ve istisna düzeltmesi<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     G --> E
-    F -- Evet --> H[Günlük ve aylık faaliyet göstergeleri<br/>Sorumlu: Faaliyet ve Gelir Raporlama Uzmanı<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    F -- Evet --> H[Günlük ve aylık faaliyet göstergeleri<br/>Sorumlu: Faaliyet ve Gelir Raporlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     H --> I[Otogar Şube Müdürü onayı<br/>Sorumlu: Otogar İşletme Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    I --> J[İdari İşler faaliyet raporu ve yönetici paneli<br/>Sorumlu: Faaliyet ve Gelir Raporlama Uzmanı<br/>Birim: Otogar İşletme Şube Müdürlüğü Yönetimi]
+    I --> J[İdari İşler faaliyet raporu ve yönetici paneli<br/>Sorumlu: Faaliyet ve Gelir Raporlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
 ```

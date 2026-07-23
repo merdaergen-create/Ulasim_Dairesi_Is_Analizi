@@ -12,8 +12,8 @@ Bu bölüm Toplu Taşıma Şube Müdürlüğünün hizmet planlama, ruhsat/vize/
 
 ```mermaid
 flowchart TD
-    A([Yeni talep veya performans sorunu<br/>Sorumlu: Toplu Taşıma Veri Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi]) --> B[Toplu Taşıma: talep ve mevcut hizmet analizi<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
-    B --> C[AUS: araç, yolcu ve zaman verisi<br/>Sorumlu: Ulaşım Veri Platformu ve Analitik Sorumlusu<br/>Birim: Veri, Güvenlik ve Platform Birimi]
+    A([Yeni talep veya performans sorunu<br/>Sorumlu: Toplu Taşıma Veri ve Performans Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi]) --> B[Toplu Taşıma: talep ve mevcut hizmet analizi<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
+    B --> C[AUS: araç, yolcu ve zaman verisi<br/>Sorumlu: Ulaşım Veri Platformu ve Veri Yönetişimi Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     C --> D[Alternatif hat/güzergâh/zaman senaryoları<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
     D --> E[Ulaşım Planlama: yol kapasitesi ve geometri kontrolü<br/>Sorumlu: Yol ve Kavşak Tasarım Sorumlusu<br/>Birim: Yol, Kavşak ve Trafik Güvenliği Birimi]
     E --> F[Maliyet, filo, tarife ve sosyal etki analizi<br/>Sorumlu: Tarife ve Maliyet Analizi Uzmanı<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
@@ -25,9 +25,9 @@ flowchart TD
     J --> K{Karar sonucu<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     K -- İade/Ret --> L[Gerekçe ve senaryo revizyonu<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     L --> D
-    K -- Kabul --> M[Hat, ruhsat, biletleme ve yolcu bilgi sistemlerinin güncellenmesi<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu / Ruhsat ve Vize Birim Sorumlusu / Akıllı Filo Operasyon Sorumlusu<br/>Birim: Ruhsat, Vize ve Başvuru Birimi / Toplu Taşıma Veri ve Akıllı Filo Birimi]
+    K -- Kabul --> M[Hat, ruhsat, biletleme ve yolcu bilgi sistemlerinin güncellenmesi<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu / Ruhsat ve Vize Birim Sorumlusu / Akıllı Filo Operasyon Sorumlusu<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi]
     M --> N[İşletmeci uygulaması<br/>Sorumlu: İşletmeci İlişkileri Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
-    N --> O[30/60/90 günlük performans izleme<br/>Sorumlu: Toplu Taşıma Veri Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi]
+    N --> O[30/60/90 günlük performans izleme<br/>Sorumlu: Toplu Taşıma Veri ve Performans Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi]
     O --> P{Hedefler sağlandı mı?<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     P -- Hayır --> D
     P -- Evet --> Q([Süreç kapanışı ve periyodik izleme<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi])
@@ -45,15 +45,15 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([Başvuru<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]) --> B[E-başvuru, kimlik ve başvuru türü kontrolü<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
-    B --> C[Otomatik belge, süre ve eksik evrak kontrolü<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
-    C --> D{Başvuru tam mı?<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi}
-    D -- Hayır --> E[Eksik belge bildirimi ve süre verilmesi<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
+    A([Başvuru<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]) --> B[E-başvuru, kimlik ve başvuru türü kontrolü<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    B --> C[Otomatik belge, süre ve eksik evrak kontrolü<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    C --> D{Başvuru tam mı?<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği}
+    D -- Hayır --> E[Eksik belge bildirimi ve süre verilmesi<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     E --> C
     D -- Evet --> F[UKOME kararı ve plaka/hak uygunluğu<br/>Sorumlu: Gündem ve Dosya Kabul Sorumlusu / UKOME Karar Yazım Uzmanı<br/>Birim: Gündem ve Dosya Kabul Birimi / Karar, Dağıtım ve Uygulama Takip Birimi]
     F --> G[Araç, şoför ve işletmeci mevzuat kontrolü<br/>Sorumlu: İşletmeci İlişkileri Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
-    G --> H{Saha/araç uygunluk kontrolü gerekli mi?<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi}
-    H -- Evet --> I[Standart kontrol formu ve muayene<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
+    G --> H{Saha/araç uygunluk kontrolü gerekli mi?<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği}
+    H -- Evet --> I[Standart kontrol formu ve muayene<br/>Sorumlu: Mevzuat ve Kalite Kontrol Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     H -- Hayır --> J[Ücret/tahsilat hesaplama<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli<br/>Birim: Belge, Tahakkuk ve Kalite Birimi]
     I --> K{Uygun mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     K -- Hayır --> L[Gerekçeli uygunsuzluk ve düzeltme süresi<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
@@ -62,9 +62,9 @@ flowchart TD
     J --> M[Tahsilat doğrulaması<br/>Sorumlu: Tahakkuk ve Tarife Kontrol Personeli<br/>Birim: Belge, Tahakkuk ve Kalite Birimi]
     M --> N{Tüm koşullar tamam mı?<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     N -- Hayır --> O[Gerekçeli ret veya bekleme<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    N -- Evet --> P[Belge üretimi, e-imza ve kayıt<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
+    N -- Evet --> P[Belge üretimi, e-imza ve kayıt<br/>Sorumlu: Başvuru ve Belge Kontrol Personeli<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     P --> Q[Denetim sistemine ve süre takvimine aktarım<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    Q --> R[Yenileme öncesi otomatik bildirim<br/>Sorumlu: Ruhsat ve Vize Birim Sorumlusu<br/>Birim: Ruhsat, Vize ve Başvuru Birimi]
+    Q --> R[Yenileme öncesi otomatik bildirim<br/>Sorumlu: Ruhsat ve Vize İşlemleri Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
 ```
 
 **Kontroller:** Başvuru türüne göre mevzuat kontrol listesi, belge geçerlilik tarihi, çift kayıt önleme, ücret tarifesi sürümü, yetkisiz belge düzenleme engeli.
@@ -98,7 +98,7 @@ flowchart TD
     M -- Evet --> N[Düzeltici işlem, süre ve takip<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     M -- Hayır --> O[Yetkili kolluk/kuruma kanıtlı bildirim<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     N --> P{Düzeltme tamamlandı mı?<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    P -- Hayır --> Q[Escalation ve sözleşme/ruhsat hükümleri<br/>Sorumlu: Ruhsat ve Vize Birim Sorumlusu<br/>Birim: Ruhsat, Vize ve Başvuru Birimi]
+    P -- Hayır --> Q[Escalation ve sözleşme/ruhsat hükümleri<br/>Sorumlu: Ruhsat ve Vize İşlemleri Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     Q --> N
     P -- Evet --> R[Dosya kapanışı<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     O --> R
@@ -119,23 +119,23 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([Yeni durak veya yer değişikliği ihtiyacı<br/>Sorumlu: Durak Hizmetleri Planlama Uzmanı<br/>Birim: Hat, Sefer ve Kapasite Planlama Birimi]) --> B[Toplu Taşıma: hizmet ve yolcu talebi analizi<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
+    A([Yeni durak veya yer değişikliği ihtiyacı<br/>Sorumlu: Durak Hizmetleri ve Erişilebilirlik Planlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]) --> B[Toplu Taşıma: hizmet ve yolcu talebi analizi<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     B --> C[Ulaşım Planlama: yol, görüş, yaya ve trafik güvenliği kontrolü<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    C --> D[Erişilebilirlik ve yürüme bağlantısı kontrolü<br/>Sorumlu: Durak Hizmetleri Planlama Uzmanı<br/>Birim: Hat, Sefer ve Kapasite Planlama Birimi]
+    C --> D[Erişilebilirlik ve yürüme bağlantısı kontrolü<br/>Sorumlu: Durak Hizmetleri ve Erişilebilirlik Planlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     D --> E{Yer uygun mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     E -- Hayır --> F[Alternatif yer analizi<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     F --> C
     E -- Evet --> G[UKOME teknik teklif ve karar<br/>Sorumlu: Gündem ve Dosya Kabul Sorumlusu / UKOME Karar Yazım Uzmanı<br/>Birim: Gündem ve Dosya Kabul Birimi / Karar, Dağıtım ve Uygulama Takip Birimi]
     G --> H{Karar olumlu mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     H -- Hayır --> F
-    H -- Evet --> I[Durak tipi, ölçü ve iş programı<br/>Sorumlu: Durak Hizmetleri Planlama Uzmanı<br/>Birim: Hat, Sefer ve Kapasite Planlama Birimi]
+    H -- Evet --> I[Durak tipi, ölçü ve iş programı<br/>Sorumlu: Durak Hizmetleri ve Erişilebilirlik Planlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     I --> J[Ulaşım Planlama/Fen: fiziksel montaj<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     J --> K[AUS: akıllı ekran, enerji ve haberleşme<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     K --> L[Ortak teknik ve erişilebilirlik kabulü<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     L --> M{Kabul uygun mu?<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
     M -- Hayır --> N[Düzeltme iş emri<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     N --> L
-    M -- Evet --> O[Tekil durak ID, CBS ve yolcu bilgi sistemine kayıt<br/>Sorumlu: Durak Hizmetleri Planlama Uzmanı<br/>Birim: Hat, Sefer ve Kapasite Planlama Birimi]
+    M -- Evet --> O[Tekil durak ID, CBS ve yolcu bilgi sistemine kayıt<br/>Sorumlu: Durak Hizmetleri ve Erişilebilirlik Planlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     O --> P[Arıza ve bakım çağrılarının ekipman türüne göre yönlendirilmesi<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
 ```
 
@@ -148,12 +148,12 @@ flowchart TD
 ```mermaid
 flowchart LR
     A[Aylık hat/işletmeci verisi<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi] --> B[Sefer, doluluk, düzenlilik ve şikâyet KPI<br/>Sorumlu: Hat ve Güzergâh Planlama Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
-    B --> C{Eşik dışı performans var mı?<br/>Sorumlu: Toplu Taşıma Veri Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi}
+    B --> C{Eşik dışı performans var mı?<br/>Sorumlu: Toplu Taşıma Veri ve Performans Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi}
     C -- Hayır --> D[Periyodik rapor ve izleme<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
     C -- Evet --> E[Kök neden: plan, filo, sürücü, trafik veya sistem<br/>Sorumlu: Filo ve Kapasite Planlama Uzmanı<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
     E --> F[Düzeltici faaliyet sahibi ve hedef tarih<br/>Sorumlu: İşletmeci İlişkileri Sorumlusu<br/>Birim: Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü Yönetimi]
     F --> G[Uygulama ve 30 günlük yeniden ölçüm<br/>Sorumlu: Toplu Taşıma Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    G --> H{Performans düzeldi mi?<br/>Sorumlu: Toplu Taşıma Veri Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi}
-    H -- Hayır --> I[Sözleşme/ruhsat/UKOME aksiyonu<br/>Sorumlu: Ruhsat ve Vize Birim Sorumlusu<br/>Birim: Ruhsat, Vize ve Başvuru Birimi]
+    G --> H{Performans düzeldi mi?<br/>Sorumlu: Toplu Taşıma Veri ve Performans Analisti<br/>Birim: Toplu Taşıma Veri ve Akıllı Filo Birimi}
+    H -- Hayır --> I[Sözleşme/ruhsat/UKOME aksiyonu<br/>Sorumlu: Ruhsat ve Vize İşlemleri Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
     H -- Evet --> D
 ```
