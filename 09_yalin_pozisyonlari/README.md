@@ -25,3 +25,7 @@ Bu klasör, `06_raporlar/optimum_organizasyon_ve_pozisyon_onerisi.md` raporunun 
 - Kadro adedi sabit değildir; işlem hacmi, vardiya, saha varlığı, proje portföyü ve risk düzeyine göre belirlenir.
 
 > Bu çalışma hedef organizasyon taslağıdır. Kadro ihdası, unvan kullanımı ve görev devri yürürlükteki norm kadro düzenlemeleri, teşkilat yönetmeliği, yetki devri ve Hukuk Müşavirliği görüşüyle doğrulanmalıdır.
+
+## Pozisyon ve birim eşleştirme standardı
+
+Bu klasördeki pozisyon adları ve birim yerleşimleri `10_yalin_pozisyon_gorev_tanimlari` içindeki güncel `Birim:` ve pozisyon başlıklarıyla birebir eşleştirilmiştir. Görev tanımlarındaki unvan veya birim değişikliği, bu klasördeki iç yapı ve pozisyon tablolarına birlikte yansıtılır.

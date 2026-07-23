@@ -24,18 +24,18 @@ Ulaşım Planlama Şube Müdürü
 
 ## Yalın pozisyonlar
 
-| Pozisyon | Birim | Ana süreçler | Birleştirilen görev alanları |
-|---|---|---|---|
-| Ulaşım Planlama Şube Müdürü | Şube Müdürlüğü Yönetimi | Ana plan, proje portföyü, teknik önceliklendirme | Şube yönetimi, kurum koordinasyonu, teknik dosya onayı |
-| Ulaşım Ana Planı ve Modelleme Sorumlusu | Ulaşım Ana Planı, Modelleme ve Veri Birimi | Ulaşım ana planı, talep tahmini, senaryo analizi | Modelleme, kapasite analizi, yatırım alternatifleri |
-| Trafik Etüt ve Veri Analizi Uzmanı | Ulaşım Ana Planı, Modelleme ve Veri Birimi | Sayım, hız, yoğunluk, kaza ve yolculuk analizi | Etüt planlama, veri kalite kontrolü, karar destek raporu |
-| Yol ve Kavşak Tasarım Sorumlusu | Yol, Kavşak ve Trafik Güvenliği Birimi | Yol, kavşak, şerit, yön, erişim ve geçiş yolu | Geometrik tasarım, saha incelemesi, uygulama projesi |
-| Trafik Güvenliği ve Sürdürülebilir Ulaşım Uzmanı | Yol, Kavşak ve Trafik Güvenliği Birimi | Kara nokta, okul çevresi, yaya, bisiklet ve hız yönetimi | Güvenlik denetimi, erişilebilirlik, mikromobilite |
-| CBS ve Ulaşım Envanteri Uzmanı | CBS ve Teknik Proje Kontrol Birimi | Yol, kavşak, durak ve ulaşım varlık envanteri | CBS veri modeli, koordinat, as-built ve sorumluluk alanı |
-| Teknik Proje Kontrol Mühendisi | CBS ve Teknik Proje Kontrol Birimi | Proje kalite ve uygulanabilirlik kontrolü | Standart, şartname, metraj girdisi ve teknik kabul desteği |
-| Trafik Eğitim ve Farkındalık Sorumlusu | Trafik Güvenliği ve Eğitim Birimi | Eğitim programı, okul/kurum koordinasyonu | Müfredat, yıllık program, kampanya ve faaliyet raporu |
-| Trafik Eğitim Uzmanı | Trafik Güvenliği ve Eğitim Birimi | Teorik ve uygulamalı eğitim | Eğitim verme, materyal kullanımı, katılımcı değerlendirmesi |
-| Eğitim Parkı İşletme ve Teknik Sorumlusu | Trafik Güvenliği ve Eğitim Birimi | Eğitim parkı seans, güvenlik ve bakım | Seans planı, saha kontrolü, ekipman ve arıza takibi |
+| Pozisyon | Bağlı birim | Ana görev odağı |
+|---|---|---|
+| Ulaşım Planlama Şube Müdürü | Şube Müdürlüğü Yönetimi | Ana plan, proje portföyü, trafik güvenliği ve eğitim faaliyetlerinin tek teknik yönetim altında yürütülmesini sağlamak |
+| Ulaşım Ana Planı ve Modelleme Sorumlusu | Ulaşım Ana Planı, Modelleme ve Veri Birimi | Ana plan, talep tahmini ve senaryo analizini yürütmek |
+| Trafik Etüt ve Veri Analizi Uzmanı | Ulaşım Ana Planı, Modelleme ve Veri Birimi | Sayım, hız, yoğunluk, kaza ve yolculuk verilerini karar desteğine dönüştürmek |
+| Yol ve Kavşak Tasarım Sorumlusu | Yol, Kavşak ve Trafik Güvenliği Birimi | Yol, kavşak, şerit, yön, erişim ve geçiş yolu projelerini hazırlamak |
+| Trafik Güvenliği ve Sürdürülebilir Ulaşım Uzmanı | Yol, Kavşak ve Trafik Güvenliği Birimi | Yol güvenliği, yaya, bisiklet, erişilebilirlik ve hız yönetimi çalışmalarını yürütmek |
+| CBS ve Ulaşım Envanteri Uzmanı | CBS ve Teknik Proje Kontrol Birimi | Ulaşım varlıklarının mekânsal envanterini güncel tutmak |
+| Teknik Proje Kontrol Mühendisi | CBS ve Teknik Proje Kontrol Birimi | Projelerin standart, uygulanabilirlik ve kalite kontrolünü yapmak |
+| Trafik Eğitim ve Farkındalık Sorumlusu | Trafik Güvenliği ve Eğitim Birimi | TE-01 ve TE-03 kapsamındaki yıllık eğitim, kurum koordinasyonu ve materyal süreçlerini yönetmek |
+| Trafik Eğitim Uzmanı | Trafik Güvenliği ve Eğitim Birimi | Teorik ve uygulamalı eğitimleri gerçekleştirmek |
+| Eğitim Parkı İşletme ve Teknik Sorumlusu | Trafik Güvenliği ve Eğitim Birimi | TE-02 kapsamındaki seans, saha güvenliği, ekipman ve bakım süreçlerini yürütmek |
 
 ## Süreç sahipliği
 

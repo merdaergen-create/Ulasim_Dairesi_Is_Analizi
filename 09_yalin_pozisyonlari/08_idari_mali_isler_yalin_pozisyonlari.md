@@ -7,24 +7,34 @@ Dairenin bütçe, performans, ihale koordinasyonu, sözleşme, teminat, ödeme e
 
 ```text
 İdari ve Mali İşler Şube Müdürü
-├── Bütçe, Performans ve Raporlama Birimi
+├── Daire Geneli Ortak Uzmanlık Desteği
+│   ├── Bütçe ve Performans Sorumlusu
+│   ├── Sözleşme ve Teminat Sorumlusu
+│   ├── Hakediş ve Ödeme Dosyası Sorumlusu
+│   ├── Faaliyet Raporlama Uzmanı
+│   └── İç Kontrol ve Risk Sorumlusu
 ├── İhale, Sözleşme ve Ödeme Dosyası Birimi
+│   └── İhale ve Satın Alma Koordinatörü
 └── EBYS, Taşınır, Personel ve İç Kontrol Birimi
+    ├── Taşınır Kayıt ve Ambar Sorumlusu
+    ├── EBYS, Arşiv ve Personel İşleri Sorumlusu
+    └── Doküman Kontrol ve Mevzuat Takip Uzmanı
 ```
 
 ## Yalın pozisyonlar
 
-| Pozisyon | Ana süreçler | Birleştirilen görev alanları |
+| Pozisyon | Bağlı birim | Ana görev odağı |
 |---|---|---|
-| İdari ve Mali İşler Şube Müdürü | Daire geneli idari ve mali süreç yönetimi | Kaynak, takvim, kontrol ve kurum koordinasyonu |
-| Bütçe, Performans ve Faaliyet Raporlama Sorumlusu | Bütçe, performans programı ve faaliyet raporu | Veri takvimi, konsolidasyon, sapma ve yönetici raporu |
-| İhale ve Satın Alma Koordinatörü | İhale yöntemi, dosya, takvim ve EKAP | Onay, ilan/davet, kayıt ve ihale koordinasyonu |
-| Sözleşme, Teminat ve Hakediş Dosyası Sorumlusu | Sözleşme, teminat, süre, hakediş ve ödeme evrakı | Kesinti, ceza, belge tamlığı ve kapanış takibi |
-| Taşınır Kayıt ve Ambar Sorumlusu | TİF, ambar, zimmet, devir ve sayım | Etiket, stok, sayım farkı ve konsolide cetvel |
-| EBYS, Arşiv ve Personel İşleri Sorumlusu | Gelen-giden evrak, dosya planı, izin ve görevlendirme | Havale, süre, e-imza, arşiv ve personel yazışmaları |
-| Doküman Kontrol ve Mevzuat Takip Uzmanı | Yönetmelik, yönerge, görev tanımı ve prosedür sürümleri | Etki analizi, revizyon, tebliğ ve mülga doküman yönetimi |
-| İç Kontrol, Risk ve Süreç Yönetimi Uzmanı | Risk, kontrol, denetim kanıtı ve iyileştirme | RACI, KPI, eylem planı ve uygunsuzluk takibi |
-| İdari Destek Personeli | Evrak, dosya, toplantı ve rutin idari işlemler | Kayıt, dağıtım, dosyalama ve operasyonel destek |
+| İdari ve Mali İşler Şube Müdürü | Şube Müdürlüğü Yönetimi | Dairenin bütçe, ihale, sözleşme, ödeme evrakı, taşınır, EBYS, arşiv ve iç kontrol süreçlerini merkezileştirmek |
+| Bütçe ve Performans Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Bütçe ve Performans Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| İhale ve Satın Alma Koordinatörü | İhale, Sözleşme ve Ödeme Dosyası Birimi | İhale ve Satın Alma Koordinatörü görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Sözleşme ve Teminat Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Sözleşme ve Teminat Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Hakediş ve Ödeme Dosyası Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Hakediş ve Ödeme Dosyası Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Taşınır Kayıt ve Ambar Sorumlusu | EBYS, Taşınır, Personel ve İç Kontrol Birimi | Taşınır Kayıt ve Ambar Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| EBYS, Arşiv ve Personel İşleri Sorumlusu | EBYS, Taşınır, Personel ve İç Kontrol Birimi | EBYS, Arşiv ve Personel İşleri Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Faaliyet Raporlama Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Faaliyet Raporlama Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Doküman Kontrol ve Mevzuat Takip Uzmanı | EBYS, Taşınır, Personel ve İç Kontrol Birimi | Doküman Kontrol ve Mevzuat Takip Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| İç Kontrol ve Risk Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | İç Kontrol ve Risk Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
 
 ## Süreç sahipliği
 

@@ -5,15 +5,15 @@ Her şubede tekrarlanması verimsiz olan uzmanlıkları ortak hizmet modeliyle k
 
 ## Ortak pozisyonlar
 
-| Ortak pozisyon | Ana konum | Hizmet verdiği alanlar |
+| Ortak pozisyon | Birim | Ana görev odağı |
 |---|---|---|
-| Hukuk ve Mevzuat Koordinatörü | İdari ve Mali İşler, Hukuk Müşavirliğiyle koordineli | Yetki, mevzuat değişikliği, düzenleyici etki ve görüş takibi |
-| CBS Yöneticisi | Ulaşım Planlama | Tüm ulaşım varlıkları, katman standartları ve mekânsal veri kalitesi |
-| Veri Yönetişimi Sorumlusu | AUS ve TKM | Veri sahipliği, katalog, kalite, erişim, paylaşım ve saklama |
-| Proje Yönetim Ofisi Uzmanı | Daire Başkanlığı veya İdari ve Mali İşler | Proje portföyü, takvim, maliyet, risk ve bağımlılık yönetimi |
-| Kalite ve Süreç Yönetimi Uzmanı | Daire Başkanlığı / İç Kontrol | Süreç kimlik kartı, RACI, KPI, iş akışı ve iyileştirme |
-| KVKK ve Bilgi Güvenliği Koordinatörü | AUS + Bilgi İşlem + Hukuk | Kamera, plaka, konum, kişisel veri ve erişim kontrolleri |
-| İş Sağlığı ve Güvenliği Koordinatörü | Kurumsal İSG yapısıyla koordineli | Trafiğe açık saha, otogar, eğitim parkı ve teknik tesis güvenliği |
+| Hukuk ve Mevzuat Koordinatörü | Daire Geneli Ortak Uzmanlık Desteği | Ulaşım süreçlerinin yetki ve mevzuat uygunluğunu izlemek |
+| CBS Yöneticisi | Daire Geneli Ortak Uzmanlık Desteği | Daire genelindeki mekânsal veri ve ulaşım varlık standardını yönetmek |
+| Veri Yönetişimi Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Veri sahipliği, kalite, erişim, paylaşım ve saklama ilkelerini kurumsallaştırmak |
+| Proje Yönetim Ofisi Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Proje portföyü, takvim, maliyet, risk ve bağımlılıkları tek görünümde yönetmek |
+| Kalite ve Süreç Yönetimi Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Süreç haritaları, RACI, KPI ve iyileştirme sistemini yönetmek |
+| KVKK ve Bilgi Güvenliği Koordinatörü | Daire Geneli Ortak Uzmanlık Desteği | Kamera, plaka, konum, başvuru ve personel verilerinin güvenli ve hukuka uygun işlenmesini koordine etmek |
+| İş Sağlığı ve Güvenliği Koordinatörü | Daire Geneli Ortak Uzmanlık Desteği | Trafiğe açık saha, otogar, eğitim parkı ve teknik tesis çalışmalarında güvenliği sağlamak |
 
 ## Yalın kadro ilkeleri
 

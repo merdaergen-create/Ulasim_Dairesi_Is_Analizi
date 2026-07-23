@@ -8,26 +8,38 @@ AUS, EDS, ulaşım veri platformu, akıllı durak ve otopark sistemleri ile Traf
 ```text
 AUS ve TKM Şube Müdürü
 ├── AUS Sistemleri ve Entegrasyon Birimi
-├── Veri, Güvenlik ve Platform Birimi
+│   ├── AUS Sistem Mimarı ve Entegrasyon Sorumlusu
+│   ├── EDS ve Saha Sistemleri Sorumlusu
+│   └── Akıllı Durak ve Yolcu Bilgilendirme Sorumlusu
+├── Daire Geneli Ortak Uzmanlık Desteği
+│   ├── Ulaşım Veri Platformu ve Veri Yönetişimi Sorumlusu
+│   ├── Siber Güvenlik, Ağ ve Erişim Sorumlusu
+│   ├── AUS Proje ve Değişiklik Yöneticisi
+│   ├── TKM Operasyon Sorumlusu
+│   └── Sinyal Optimizasyon ve Operasyon Analisti
+├── Trafik Yönetim Merkezi Operasyon Birimi / Terminal Operasyon ve Peron Birimi
+│   └── Vardiya Amiri
 └── Trafik Yönetim Merkezi Operasyon Birimi
+    ├── Trafik Kontrol Operatörü
+    └── Olay Yönetimi ve Trafik Bilgilendirme Sorumlusu
 ```
 
 ## Yalın pozisyonlar
 
-| Pozisyon | Ana süreçler | Birleştirilen görev alanları |
+| Pozisyon | Bağlı birim | Ana görev odağı |
 |---|---|---|
-| AUS ve TKM Şube Müdürü | Teknoloji portföyü ve trafik merkezi yönetimi | Bütçe, kaynak, sistem sürekliliği ve operasyon koordinasyonu |
-| AUS Sistem Mimarı ve Entegrasyon Sorumlusu | EDS, sensör, kamera, akıllı durak, filo entegrasyonu | Mimari, teknik şartname, entegrasyon ve kabul |
-| Ulaşım Veri Platformu ve Analitik Sorumlusu | Veri kataloğu, API, kalite, panel ve analiz | Veri yönetişimi, veri analizi ve karar destek |
-| Haberleşme, Ağ ve Siber Güvenlik Mühendisi | Fiber, radyo, saha ağı, erişim, log ve yedekleme | Ağ sürekliliği, güvenlik, yetki ve olay yönetimi |
-| EDS ve Saha Sistemleri Sorumlusu | EDS teknik platformu ve saha sistemleri | Kolluk entegrasyonu, cihaz izleme, arıza ve performans |
-| Akıllı Durak ve Yolcu Bilgilendirme Sorumlusu | Dijital durak, gerçek zamanlı bilgi ve içerik | Ekran, ses, enerji, haberleşme ve veri entegrasyonu |
-| Ulaşım Teknolojileri Proje Yöneticisi | Teknoloji tedarik, uygulama ve kabul | Kapsam, takvim, risk, yüklenici ve test yönetimi |
-| TKM Operasyon Birim Sorumlusu | 7/24 trafik izleme ve olay yönetimi | Vardiya, olay, yoğunluk ve kurum koordinasyonu |
-| Vardiya Amiri | Vardiya yönetimi ve olay önceliklendirme | Görev dağılımı, devir, kayıt ve kritik bildirim |
-| Trafik Kontrol Operatörü | Kamera, sensör, sinyal ve olay ekranları | Olay doğrulama, kayıt, ilk müdahale ve bilgilendirme |
-| Olay Yönetimi ve Trafik Bilgilendirme Sorumlusu | Kaza, kapanma, afet ve kamu bilgilendirmesi | Kurum koordinasyonu, alternatif güzergâh ve duyuru |
-| Sinyal Optimizasyon ve Operasyon Raporlama Mühendisi | Canlı trafik analizi ve performans raporu | Sinyal optimizasyonu, olay analizi ve vardiya KPI'ları |
+| AUS ve TKM Şube Müdürü | Şube Müdürlüğü Yönetimi | Teknoloji platformları ile trafik operasyonunu aynı şube altında fakat görev ayrılığı korunarak yönetmek |
+| AUS Sistem Mimarı ve Entegrasyon Sorumlusu | AUS Sistemleri ve Entegrasyon Birimi | AUS Sistem Mimarı ve Entegrasyon Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Ulaşım Veri Platformu ve Veri Yönetişimi Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Ulaşım Veri Platformu ve Veri Yönetişimi Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Siber Güvenlik, Ağ ve Erişim Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Siber Güvenlik, Ağ ve Erişim Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| EDS ve Saha Sistemleri Sorumlusu | AUS Sistemleri ve Entegrasyon Birimi | EDS ve Saha Sistemleri Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Akıllı Durak ve Yolcu Bilgilendirme Sorumlusu | AUS Sistemleri ve Entegrasyon Birimi | Akıllı Durak ve Yolcu Bilgilendirme Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| AUS Proje ve Değişiklik Yöneticisi | Daire Geneli Ortak Uzmanlık Desteği | AUS Proje ve Değişiklik Yöneticisi görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| TKM Operasyon Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | TP-06 kapsamındaki 7/24 operasyonu yönetmek |
+| Vardiya Amiri | Trafik Yönetim Merkezi Operasyon Birimi / Terminal Operasyon ve Peron Birimi | Vardiya Amiri görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Trafik Kontrol Operatörü | Trafik Yönetim Merkezi Operasyon Birimi | Trafik Kontrol Operatörü görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Olay Yönetimi ve Trafik Bilgilendirme Sorumlusu | Trafik Yönetim Merkezi Operasyon Birimi | Olay Yönetimi ve Trafik Bilgilendirme Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Sinyal Optimizasyon ve Operasyon Analisti | Daire Geneli Ortak Uzmanlık Desteği | Sinyal Optimizasyon ve Operasyon Analisti görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
 
 ## Süreç sahipliği
 

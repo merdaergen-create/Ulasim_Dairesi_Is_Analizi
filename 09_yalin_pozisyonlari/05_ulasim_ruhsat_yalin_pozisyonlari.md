@@ -7,23 +7,32 @@ Ticari araç, servis, taksi, yük ve diğer ulaşım izin, ruhsat ve vize işlem
 
 ```text
 Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürü
-├── Ruhsat, Vize ve Başvuru Birimi
+├── Daire Geneli Ortak Uzmanlık Desteği
+│   ├── Ruhsat ve Vize İşlemleri Sorumlusu
+│   ├── Servis, Taksi ve Ticari Plaka İşlemleri Sorumlusu
+│   ├── Başvuru ve Belge Kontrol Personeli
+│   ├── Araç Uygunluk ve Saha Kontrol Sorumlusu
+│   ├── Dijital Başvuru ve Belge Yönetimi Uzmanı
+│   └── Mevzuat ve Kalite Kontrol Uzmanı
 ├── Ticari Araç ve Özel İzinler Birimi
+│   └── Yük ve Özel Taşıma İzinleri Sorumlusu
 └── Belge, Tahakkuk ve Kalite Birimi
+    └── Tahakkuk ve Tarife Kontrol Personeli
 ```
 
 ## Yalın pozisyonlar
 
-| Pozisyon | Ana süreçler | Birleştirilen görev alanları |
+| Pozisyon | Bağlı birim | Ana görev odağı |
 |---|---|---|
-| Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürü | İzin, ruhsat, vize ve belge süreçleri | Süreç yönetimi, kurum koordinasyonu ve performans |
-| Ruhsat ve Vize Birim Sorumlusu | Ruhsat, vize, yenileme ve süre takibi | Başvuru sınıflandırma, uygunluk ve belge üretimi |
-| Servis Araçları İşlemleri Sorumlusu | S plaka ve servis izinleri | Başvuru, uygunluk, yenileme ve kayıt |
-| Taksi ve Ticari Plaka İşlemleri Sorumlusu | Taksi ve diğer ticari plaka işlemleri | Hak, plaka, karar ve belge kontrolü |
-| Yük ve Özel Taşıma İzinleri Sorumlusu | Yük nakli ve özel/geçici izinler | Güzergâh, süre, koşul ve izin belgesi |
-| Başvuru, Belge ve Dijital Süreç Uzmanı | E-başvuru, randevu ve evrak kontrolü | Kimlik, belge tamlığı, bildirim ve işlem takibi |
-| Tahakkuk ve Tarife Kontrol Personeli | Ücret, tahakkuk ve ödeme doğrulama | Tarife sürümü, muafiyet, ödeme ve mali kayıt kontrolü |
-| Arşiv, Mevzuat ve Kalite Kontrol Uzmanı | Dosya, şablon, mevzuat ve süreç kalite kontrolü | Elektronik arşiv, kontrol listesi ve güncellik |
+| Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürü | Şube Müdürlüğü Yönetimi | Ruhsat, vize, izin ve ticari araç belge süreçlerini tek süreç sahipliği altında yönetmek |
+| Ruhsat ve Vize İşlemleri Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Ruhsat ve Vize İşlemleri Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Servis, Taksi ve Ticari Plaka İşlemleri Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Servis, Taksi ve Ticari Plaka İşlemleri Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Yük ve Özel Taşıma İzinleri Sorumlusu | Ticari Araç ve Özel İzinler Birimi | Yük ve Özel Taşıma İzinleri Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Başvuru ve Belge Kontrol Personeli | Daire Geneli Ortak Uzmanlık Desteği | Başvuru ve Belge Kontrol Personeli görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Araç Uygunluk ve Saha Kontrol Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Araç Uygunluk ve Saha Kontrol Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Tahakkuk ve Tarife Kontrol Personeli | Belge, Tahakkuk ve Kalite Birimi | Tahakkuk ve Tarife Kontrol Personeli görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Dijital Başvuru ve Belge Yönetimi Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Dijital Başvuru ve Belge Yönetimi Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Mevzuat ve Kalite Kontrol Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Mevzuat ve Kalite Kontrol Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
 
 ## Süreç sahipliği
 

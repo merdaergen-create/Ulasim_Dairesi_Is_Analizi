@@ -8,22 +8,29 @@ Toplu taşıma hizmet modeli, hat-güzergâh-zaman planı, filo kapasitesi, işl
 ```text
 Toplu Taşıma Şube Müdürü
 ├── Hat, Sefer ve Kapasite Planlama Birimi
-├── İşletmeci ve Hizmet Kalitesi Birimi
+│   └── Hat, Güzergâh ve Sefer Planlama Sorumlusu
+├── Daire Geneli Ortak Uzmanlık Desteği
+│   ├── Tarife, Maliyet ve Filo Planlama Uzmanı
+│   ├── İşletmeci İlişkileri ve Hizmet Kalitesi Sorumlusu
+│   ├── Durak Hizmetleri ve Erişilebilirlik Planlama Uzmanı
+│   └── Sözleşme Teknik Kontrol Uzmanı
 └── Toplu Taşıma Veri ve Akıllı Filo Birimi
+    ├── Toplu Taşıma Veri ve Performans Analisti
+    └── Akıllı Filo Operasyon Sorumlusu
 ```
 
 ## Yalın pozisyonlar
 
-| Pozisyon | Ana süreçler | Birleştirilen görev alanları |
+| Pozisyon | Bağlı birim | Ana görev odağı |
 |---|---|---|
-| Toplu Taşıma Şube Müdürü | Hizmet planı, işletme ve performans yönetimi | Kaynak, kurum, işletmeci ve UKOME teknik dosya koordinasyonu |
-| Hat, Güzergâh ve Sefer Planlama Sorumlusu | Hat, güzergâh, zaman ve sefer planı | Talep analizi, alternatif senaryo ve uygulama izleme |
-| Tarife, Maliyet ve Kapasite Planlama Uzmanı | Tarife, sübvansiyon, filo ve kapasite | Maliyet analizi, araç tipi, filo büyüklüğü ve gelir etkisi |
-| Toplu Taşıma Veri ve Performans Analisti | Doluluk, dakiklik, sefer ve yolcu talebi | KPI, veri kalite kontrolü, kök neden ve karar destek |
-| İşletmeci İlişkileri ve Sözleşme Teknik Kontrol Sorumlusu | İşletmeci yükümlülükleri ve teknik sözleşme kontrolü | Bildirim, toplantı, düzeltici faaliyet ve teknik kanıt |
-| Hizmet Kalitesi ve Şikâyet Yönetimi Sorumlusu | Dakiklik, iptal, erişilebilirlik ve memnuniyet | Şikâyet analizi, hizmet standardı ve iyileştirme takibi |
-| Durak Hizmetleri Planlama Uzmanı | Durak ihtiyacı ve erişilebilirlik | Hizmet seviyesi, yürüme mesafesi ve UKOME teknik teklifi |
-| Akıllı Filo Operasyon Sorumlusu | Canlı filo izleme ve operasyon kuralları | Sapma, gecikme, alarm ve AUS koordinasyonu |
+| Toplu Taşıma Şube Müdürü | Şube Müdürlüğü Yönetimi | Hat, güzergâh, sefer, filo, hizmet kalitesi ve işletmeci performansını yönetmek |
+| Hat, Güzergâh ve Sefer Planlama Sorumlusu | Hat, Sefer ve Kapasite Planlama Birimi | Hat, Güzergâh ve Sefer Planlama Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Tarife, Maliyet ve Filo Planlama Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Tarife, Maliyet ve Filo Planlama Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Toplu Taşıma Veri ve Performans Analisti | Toplu Taşıma Veri ve Akıllı Filo Birimi | Toplu Taşıma Veri ve Performans Analisti görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| İşletmeci İlişkileri ve Hizmet Kalitesi Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | İşletmeci İlişkileri ve Hizmet Kalitesi Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Durak Hizmetleri ve Erişilebilirlik Planlama Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Durak Hizmetleri ve Erişilebilirlik Planlama Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Akıllı Filo Operasyon Sorumlusu | Toplu Taşıma Veri ve Akıllı Filo Birimi | Akıllı Filo Operasyon Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Sözleşme Teknik Kontrol Uzmanı | Daire Geneli Ortak Uzmanlık Desteği | Sözleşme Teknik Kontrol Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
 
 ## Süreç sahipliği
 

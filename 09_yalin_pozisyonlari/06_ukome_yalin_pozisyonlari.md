@@ -8,21 +8,29 @@ UKOME gündem, alt komisyon, toplantı, karar, imza, dağıtım, arşiv ve uygul
 ```text
 UKOME Şube Müdürü
 ├── Gündem ve Dosya Kabul Birimi
-├── Alt Komisyon ve Kurum Koordinasyon Birimi
+│   ├── Gündem ve Dosya Kabul Sorumlusu
+│   └── Dijital UKOME Sistem Sorumlusu
+├── Daire Geneli Ortak Uzmanlık Desteği
+│   ├── Alt Komisyon ve Kurum Koordinasyon Sorumlusu
+│   ├── Karar Dağıtım, Tebligat ve Arşiv Personeli
+│   └── Arşiv ve Karar Araştırma Personeli
 └── Karar, Dağıtım ve Uygulama Takip Birimi
+    ├── UKOME Karar Yazım Uzmanı
+    └── Karar Uygulama Takip Uzmanı
 ```
 
 ## Yalın pozisyonlar
 
-| Pozisyon | Ana süreçler | Birleştirilen görev alanları |
+| Pozisyon | Bağlı birim | Ana görev odağı |
 |---|---|---|
-| UKOME Şube Müdürü | Kurul, gündem, karar ve uygulama takip yönetimi | Sekretarya, toplantı ve kurum koordinasyonu |
-| Gündem ve Dosya Kabul Sorumlusu | Kayıt, tamlık, yetki ve önceki karar kontrolü | Dosya kabul, sınıflandırma ve kalite kapısı |
-| Alt Komisyon ve Kurumlar Arası Koordinasyon Sorumlusu | Alt komisyon takvimi ve kurum görüşleri | Üye, toplantı, saha incelemesi ve görüş takibi |
-| UKOME Karar Yazım Uzmanı | Tutanak, karar metni ve uygulama şartları | Gündem maddesi, karar dili, numara ve imza süreci |
-| Karar Dağıtım, Tebligat ve Arşiv Sorumlusu | Dağıtım, tebliğ, e-imza ve dijital arşiv | Teslim kaydı, karar araştırması ve dosya bütünlüğü |
-| Karar Uygulama Takip Uzmanı | Süre, kanıt, gecikme ve kapanış takibi | Bildirim, düzeltme, escalation ve performans raporu |
-| Dijital UKOME Sistem Sorumlusu | Gündem, iş akışı, e-imza ve raporlama sistemi | Yetki, kayıt, arşiv ve karar takip platformu |
+| UKOME Şube Müdürü | Şube Müdürlüğü Yönetimi | UKOME sekretarya, gündem, karar, dağıtım ve uygulama takip süreçlerini yönetmek |
+| Gündem ve Dosya Kabul Sorumlusu | Gündem ve Dosya Kabul Birimi | Gündem ve Dosya Kabul Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Alt Komisyon ve Kurum Koordinasyon Sorumlusu | Daire Geneli Ortak Uzmanlık Desteği | Alt Komisyon ve Kurum Koordinasyon Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| UKOME Karar Yazım Uzmanı | Karar, Dağıtım ve Uygulama Takip Birimi | UKOME Karar Yazım Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Karar Dağıtım, Tebligat ve Arşiv Personeli | Daire Geneli Ortak Uzmanlık Desteği | Karar Dağıtım, Tebligat ve Arşiv Personeli görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Karar Uygulama Takip Uzmanı | Karar, Dağıtım ve Uygulama Takip Birimi | Karar Uygulama Takip Uzmanı görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Dijital UKOME Sistem Sorumlusu | Gündem ve Dosya Kabul Birimi | Dijital UKOME Sistem Sorumlusu görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
+| Arşiv ve Karar Araştırma Personeli | Daire Geneli Ortak Uzmanlık Desteği | Arşiv ve Karar Araştırma Personeli görev alanındaki işlerin düzenli, izlenebilir ve mevzuata uygun yürütülmesini sağlamak |
 
 ## Süreç sahipliği
 
