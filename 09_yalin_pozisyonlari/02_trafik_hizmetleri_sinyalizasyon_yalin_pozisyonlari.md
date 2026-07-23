@@ -8,21 +8,28 @@ Sinyalizasyon, yatay ve düşey işaretleme, fiziksel durak varlıkları ve traf
 ```text
 Trafik Hizmetleri ve Sinyalizasyon Şube Müdürü
 ├── Sinyalizasyon Proje ve İşletme Birimi
+│   └── Sinyalizasyon Proje ve İşletme Sorumlusu
 ├── Sinyalizasyon Bakım ve Saha Elektroniği Birimi
+│   ├── Sinyalizasyon Bakım ve Elektronik Sorumlusu
+│   └── Saha Uygulama Teknik Personeli
 └── İşaretleme, Durak ve Saha Uygulama Birimi
+    ├── İşaretleme ve Trafik Saha Uygulama Sorumlusu
+    ├── Durak Fiziksel Varlık Sorumlusu
+    ├── Saha Kalite, Kabul ve İSG Teknikeri
+    └── Saha Uygulama Teknik Personeli
 ```
 
 ## Yalın pozisyonlar
 
-| Pozisyon | Ana süreçler | Birleştirilen görev alanları |
-|---|---|---|
-| Trafik Hizmetleri ve Sinyalizasyon Şube Müdürü | Saha trafik altyapısı, bakım ve uygulama yönetimi | İş programı, kaynak, yüklenici ve performans yönetimi |
-| Sinyalizasyon Proje ve İşletme Sorumlusu | Yeni sinyalize kavşak, faz ve süre planları | Proje, programlama, test ve işletme parametreleri |
-| Sinyalizasyon Bakım ve Elektronik Sorumlusu | Arıza, periyodik bakım, enerji ve saha elektroniği | Elektrik-elektronik mühendisliği, yedek parça ve SLA |
-| İşaretleme ve Trafik Saha Uygulama Sorumlusu | Yatay/düşey işaretleme ve geçici trafik uygulaması | Yol çizgisi, levha, ekip, metraj ve saha iş emri |
-| Durak Fiziksel Varlık Sorumlusu | Durak montajı, bakım ve varlık yönetimi | Durak tipi, fiziksel kabul, arıza ve bakım koordinasyonu |
-| Saha Kalite, Kabul ve İSG Teknikeri | Kalite, kabul ve iş güvenliği kontrolü | Uygulama kontrolü, fotoğraf, metraj, test ve İSG kaydı |
-| Saha Uygulama Teknik Personeli | Montaj, bakım ve saha müdahalesi | Sinyal, levha, çizgi ve durak saha işleri |
+| Pozisyon | Birim | Ana süreçler | Birleştirilen görev alanları |
+|---|---|---|---|
+| Trafik Hizmetleri ve Sinyalizasyon Şube Müdürü | Şube Müdürlüğü Yönetimi | Saha trafik altyapısı, bakım ve uygulama yönetimi | İş programı, kaynak, yüklenici ve performans yönetimi |
+| Sinyalizasyon Proje ve İşletme Sorumlusu | Sinyalizasyon Proje ve İşletme Birimi | Yeni sinyalize kavşak, faz ve süre planları | Proje, programlama, test ve işletme parametreleri |
+| Sinyalizasyon Bakım ve Elektronik Sorumlusu | Sinyalizasyon Bakım ve Saha Elektroniği Birimi | Arıza, periyodik bakım, enerji ve saha elektroniği | Elektrik-elektronik işleri, yedek parça ve SLA |
+| İşaretleme ve Trafik Saha Uygulama Sorumlusu | İşaretleme, Durak ve Saha Uygulama Birimi | Yatay/düşey işaretleme ve geçici trafik uygulaması | Yol çizgisi, levha, ekip, metraj ve saha iş emri |
+| Durak Fiziksel Varlık Sorumlusu | İşaretleme, Durak ve Saha Uygulama Birimi | Durak montajı, bakım ve varlık yönetimi | Durak tipi, fiziksel kabul, arıza ve bakım koordinasyonu |
+| Saha Kalite, Kabul ve İSG Teknikeri | İşaretleme, Durak ve Saha Uygulama Birimi | Kalite, kabul ve iş güvenliği kontrolü | Uygulama kontrolü, fotoğraf, metraj, test ve İSG kaydı |
+| Saha Uygulama Teknik Personeli | Sinyalizasyon Bakım ve Saha Elektroniği Birimi / İşaretleme, Durak ve Saha Uygulama Birimi | Montaj, bakım ve saha müdahalesi | Sinyal, levha, çizgi ve durak saha işleri |
 
 ## Süreç sahipliği
 
