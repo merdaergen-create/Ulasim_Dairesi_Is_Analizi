@@ -19,3 +19,10 @@ Bu klasör, `09_yalin_pozisyonlari` altında tanımlanan 8 şubeli yalın organi
 Her pozisyon için amaç, organizasyonel bağlılık, sorumlu süreçler, süreç adımları, görevler, girdiler, çıktılar, yetki sınırları, koordinasyon ilişkileri, performans göstergeleri ve vekâlet ilkeleri tanımlanmıştır.
 
 > Bu dokümanlar hedef süreç ve organizasyon taslağıdır. Unvan, kadro ihdası, atama şartı, yetki devri ve görev değişikliği yürürlükteki norm kadro, teşkilat, personel, mali mevzuat ve Hukuk Müşavirliği görüşüyle doğrulanmalıdır.
+
+
+## Profesyonel görev tanımı standardı
+
+Her pozisyon; birim, amaç, bağlılık, vekâlet, sorumlu süreçler, temel görev ve sorumluluklar, yetki sınırları, girdiler, çıktılar, koordinasyon, kayıt/form, KPI, yetkinlik ve görev ayrılığı başlıklarıyla standardize edilmiştir.
+
+Kaynaklarda açıkça desteklenmeyen diploma, sertifika, hizmet süresi veya kadro şartları kesin hüküm olarak eklenmemiştir. Bu şartlar yürürlüğe alma aşamasında İnsan Kaynakları, norm kadro ve ilgili mevzuat çerçevesinde belirlenmelidir.
