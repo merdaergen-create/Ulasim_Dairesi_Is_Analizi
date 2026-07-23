@@ -1,0 +1,44 @@
+name: 09 pozisyon yapısını 10 görev tanımlarından güncelle
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '10_yalin_pozisyon_gorev_tanimlari/**'
+      - '09_yalin_pozisyonlari/**'
+      - 'scripts/sync_09_positions_from_10.py'
+      - '.github/workflows/sync_09_positions_from_10.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Pozisyon adlarını ve birim yerleşimlerini senkronize et
+        run: python scripts/sync_09_positions_from_10.py
+
+      - name: Çıktıları doğrula
+        run: |
+          grep -R -F '| Pozisyon | Bağlı birim | Ana görev odağı |' 09_yalin_pozisyonlari/0[1-8]_*.md >/dev/null
+          grep -R -F 'Şube Müdürlüğü Yönetimi' 09_yalin_pozisyonlari/0[1-8]_*.md >/dev/null
+          grep -F '| Ortak pozisyon | Birim | Ana görev odağı |' 09_yalin_pozisyonlari/09_ortak_pozisyonlar_ve_kadro_ilkeleri.md >/dev/null
+
+      - name: Değişiklikleri main dalına kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 09_yalin_pozisyonlari
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok."
+          else
+            git commit -m "09 yalın pozisyonları güncel görev tanımları ve birimlerle eşleştir"
+            git push
+          fi
