@@ -6,6 +6,10 @@ Bu bölüm EDS/AUS sistemleri, ulaşım veri platformu, akıllı durak ve kamera
 
 ## AU-01 — EDS/AUS ihtiyacı, tasarımı, kurulumu ve kabulü
 
+**Atanan şube:** Akıllı Ulaşım Sistemleri ve Trafik Yönetim Merkezi Şube Müdürlüğü  
+**Atanan ana birim:** AUS Sistemleri ve Entegrasyon Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **İş ihtiyacı sahibi:** Ulaşım Planlama  
 **Teknoloji ve sistem sahibi:** Akıllı Ulaşım Sistemleri Şube Müdürlüğü  
 **Karar paydaşları:** UKOME, kolluk, Hukuk Müşavirliği, Bilgi İşlem ve ilgili kurumlar  
@@ -45,6 +49,10 @@ flowchart TD
 
 ## AU-02 — Ulaşım veri platformu ve karar destek
 
+**Atanan şube:** Akıllı Ulaşım Sistemleri ve Trafik Yönetim Merkezi Şube Müdürlüğü  
+**Atanan ana birim:** Veri, Güvenlik ve Platform Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Akıllı Ulaşım Sistemleri Şube Müdürlüğü  
 **Veri sahipleri:** İlgili şubeler  
 **Girdiler:** Kamera, sensör, sinyal, araç, hat, ruhsat, otogar, şikâyet, kaza ve saha varlık verileri.  
@@ -79,6 +87,10 @@ flowchart TD
 ---
 
 ## AU-03 — Akıllı durak ve yolcu bilgilendirme sistemi
+
+**Atanan şube:** Akıllı Ulaşım Sistemleri ve Trafik Yönetim Merkezi Şube Müdürlüğü  
+**Atanan ana birim:** AUS Sistemleri ve Entegrasyon Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 **Hizmet sahibi:** Toplu Taşıma  
 **Fiziksel durak sahibi:** Ulaşım Planlama  
@@ -115,6 +127,10 @@ flowchart TD
 
 ## AU-04 — Kamera görüntüsü talebi, erişim ve teslim
 
+**Atanan şube:** Akıllı Ulaşım Sistemleri ve Trafik Yönetim Merkezi Şube Müdürlüğü  
+**Atanan ana birim:** Veri, Güvenlik ve Platform Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Teknik veri saklama sahibi:** Akıllı Ulaşım Sistemleri  
 **Hukuki karar sahibi:** Yetkilendirilmiş birim/Hukuk Müşavirliği  
 **Girdiler:** Yetkili kurum veya kişi talebi, olay, tarih-saat, konum ve hukuki dayanak.  
@@ -141,6 +157,10 @@ flowchart TD
 ---
 
 ## AU-05 — AUS arıza ve değişiklik yönetimi
+
+**Atanan şube:** Akıllı Ulaşım Sistemleri ve Trafik Yönetim Merkezi Şube Müdürlüğü  
+**Atanan ana birim:** AUS Sistemleri ve Entegrasyon Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 ```mermaid
 flowchart LR

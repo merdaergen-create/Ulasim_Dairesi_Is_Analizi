@@ -6,6 +6,10 @@ Bu bölüm Ulaşım Koordinasyon Şube Müdürlüğünün UKOME sekretaryası, k
 
 ## UK-01 — UKOME gündem, alt komisyon ve karar süreci
 
+**Atanan şube:** UKOME Şube Müdürlüğü  
+**Atanan ana birim:** Alt Komisyon ve Kurum Koordinasyon Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Ulaşım Koordinasyon Şube Müdürlüğü  
 **Teknik dosya sahibi:** Teklifi hazırlayan şube  
 **Girdiler:** İmzalı teknik rapor, proje/harita, mevzuat dayanağı, kurum görüşleri, önceki UKOME kararları, başvuru ve ekleri.  
@@ -52,6 +56,10 @@ flowchart TD
 
 ## UK-02 — UKOME kararının uygulama ve kapanış takibi
 
+**Atanan şube:** UKOME Şube Müdürlüğü  
+**Atanan ana birim:** Karar, Dağıtım ve Uygulama Takip Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Takip sahibi:** Ulaşım Koordinasyon Şube Müdürlüğü  
 **Uygulama sahibi:** Kararda belirtilen teknik şube veya kurum  
 **Girdiler:** İmzalı karar, uygulama şartları, sorumlu birimler, süre ve varsa bütçe/ihale ihtiyacı.  
@@ -89,6 +97,10 @@ flowchart TD
 ---
 
 ## UK-03 — Kurum veya vatandaş başvurusunun UKOME sürecine alınması
+
+**Atanan şube:** UKOME Şube Müdürlüğü  
+**Atanan ana birim:** Gündem ve Dosya Kabul Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 **Girdiler:** Başvuru dilekçesi/e-başvuru, ek belgeler, talep konusu ve konum bilgisi.  
 **Çıktılar:** Teknik şubeye yönlendirme, kurul kararı gerekmiyorsa idari cevap, UKOME kararı gerekiyorsa tamamlanmış teklif dosyası.

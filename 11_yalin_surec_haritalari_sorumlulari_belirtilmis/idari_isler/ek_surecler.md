@@ -6,6 +6,10 @@ Bu dosya, kaynak belgelerde yer aldığı halde mevcut `ID-01–ID-06` haritalar
 
 ## ID-07 — Taşıt görev emri ve hizmet aracı görevlendirme süreci
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** EBYS, Taşınır, Personel ve İç Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari ve Mali İşler / İdari Destek Birimi  
 **Araç ve sürücü operasyonu:** İlgili araç havuzu veya görevlendirilen şube  
 **Kaynak dayanağı:** Taşıt Görev Emri Formu ve Şoför Görev Tanımı.  

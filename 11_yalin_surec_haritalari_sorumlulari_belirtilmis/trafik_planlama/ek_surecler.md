@@ -6,6 +6,10 @@ Bu dosya, kaynak belgelerde yer aldığı halde mevcut `TP-01–TP-06` haritalar
 
 ## TP-07 — Otopark erişim uygunluk belgesi
 
+**Atanan şube:** Ulaşım Planlama Şube Müdürlüğü  
+**Atanan ana birim:** CBS ve Teknik Proje Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Ulaşım Planlama Şube Müdürlüğü  
 **Karar/kurum paydaşları:** İmar ve Şehircilik, Fen İşleri, UKOME ve ilgili ilçe belediyesi  
 **Kaynak dayanağı:** Otopark erişim uygunluk belgesi ve Ulaşım Planlama görev/yönerge belgeleri.  

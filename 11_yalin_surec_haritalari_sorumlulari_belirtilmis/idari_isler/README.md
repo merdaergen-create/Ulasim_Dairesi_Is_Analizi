@@ -6,6 +6,10 @@ Bu bölüm evrak, ihale, sözleşme, hakediş, ödeme, bütçe, performans, faal
 
 ## ID-01 — İhale ve satın alma dosyası
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** İhale, Sözleşme ve Ödeme Dosyası Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler Şefliği  
 **Teknik içerik sahibi:** İhtiyaç sahibi şube  
 **Hesap verebilir:** Harcama yetkilisi  
@@ -43,6 +47,10 @@ flowchart TD
 
 ## ID-02 — Sözleşme, hakediş, muayene-kabul ve ödeme
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** İhale, Sözleşme ve Ödeme Dosyası Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler — idari ve mali dosya  
 **Teknik kontrol sahibi:** İlgili teknik şube  
 **Girdiler:** Sözleşme, iş programı, teslim/saha kayıtları, metraj, faturalar, teminat ve kontrol raporları.  
@@ -79,6 +87,10 @@ flowchart TD
 
 ## ID-03 — Bütçe, performans programı ve faaliyet raporu
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** Bütçe, Performans ve Raporlama Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler Şefliği  
 **Veri sahibi:** Her şube  
 **Girdiler:** Stratejik plan, hedefler, faaliyetler, bütçe ihtiyaçları, gerçekleşmeler, KPI ve mali veriler.  
@@ -111,6 +123,10 @@ flowchart TD
 
 ## ID-04 — Evrak, EBYS, izin ve arşiv
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** EBYS, Taşınır, Personel ve İç Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler Şefliği  
 **Girdiler:** Gelen/giden evrak, olur, görev/izin/rapor, dosya planı ve kurum yazışmaları.  
 **Çıktılar:** Doğru birime yönlendirilmiş evrak, işlem izi, cevap, izin kaydı ve arşiv.
@@ -139,6 +155,10 @@ flowchart TD
 ---
 
 ## ID-05 — Taşınır, ambar, zimmet ve sayım
+
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** EBYS, Taşınır, Personel ve İç Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 **Süreç sahibi:** İdari İşler / Taşınır Kayıt Yetkilisi  
 **Girdiler:** Muayene-kabul edilmiş mal, TİF, talep, zimmet, devir ve sayım listesi.  
@@ -171,6 +191,10 @@ flowchart TD
 ---
 
 ## ID-06 — Yönetmelik, yönerge ve görev tanımı değişikliği
+
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** EBYS, Taşınır, Personel ve İç Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 ```mermaid
 flowchart TD

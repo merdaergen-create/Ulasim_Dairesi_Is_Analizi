@@ -6,6 +6,10 @@ Bu bölüm otogar araç giriş-çıkış, tahakkuk/tahsilat, peron ve teknik tes
 
 ## OT-01 — Araç giriş-çıkış, tahakkuk ve tahsilat
 
+**Atanan şube:** Otogar İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Gişe, Tahakkuk ve Gelir Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Gişe ve Tahsilat İşlemleri Birimi  
 **Hesap verebilir:** Otogar Şube Müdürü  
 **Girdiler:** Plaka, firma/sefer, araç sınıfı, giriş-çıkış zamanı, yetki belgesi, güncel ücret tarifesi ve muafiyet bilgisi.  
@@ -47,6 +51,10 @@ flowchart TD
 
 ## OT-02 — Peron tahsisi ve günlük saha işletimi
 
+**Atanan şube:** Otogar İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Terminal Operasyon ve Peron Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Otogar İşletme Birimi  
 **Girdiler:** Firma ve yetki bilgileri, sefer planı, peron kapasitesi, geliş/gidiş zamanı, özel durum ve işletme kuralları.  
 **Çıktılar:** Peron tahsisi, günlük peron planı, gecikme/çakışma kaydı, olay ve vardiya raporu.
@@ -75,6 +83,10 @@ flowchart TD
 ---
 
 ## OT-03 — Teknik bakım, arıza ve tesis hizmeti
+
+**Atanan şube:** Otogar İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Teknik İşletme ve Güvenlik Koordinasyon Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 **Süreç sahibi:** Otogar teknik işletme sahibi olarak belirlenecek birim  
 **Ortak hizmet paydaşları:** Destek Hizmetleri, Bilgi İşlem, İtfaiye/İSG ve yükleniciler  
@@ -111,6 +123,10 @@ flowchart TD
 ---
 
 ## OT-04 — Otogar gelir ve faaliyet raporlaması
+
+**Atanan şube:** Otogar İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Gişe, Tahakkuk ve Gelir Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 ```mermaid
 flowchart LR

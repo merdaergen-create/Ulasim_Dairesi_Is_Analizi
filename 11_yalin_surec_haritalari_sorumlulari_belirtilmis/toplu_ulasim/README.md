@@ -6,6 +6,10 @@ Bu bölüm Toplu Taşıma Şube Müdürlüğünün hizmet planlama, ruhsat/vize/
 
 ## TU-01 — Hat, güzergâh, zaman, sefer ve tarife planlama
 
+**Atanan şube:** Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Hat, Sefer ve Kapasite Planlama Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Toplu Taşıma Planlama Birimi  
 **Girdiler:** Yolcu talebi, doluluk, filo ve maliyet verileri, mevcut hatlar, şikâyetler, imar/yol ağı, duraklar ve trafik koşulları.  
 **Çıktılar:** Teknik rapor, hat–güzergâh–zaman–tarife önerisi, UKOME kararı, işletmeci talimatı ve izleme raporu.
@@ -38,6 +42,10 @@ flowchart TD
 ---
 
 ## TU-02 — Ruhsat, vize, izin ve yetki belgesi
+
+**Atanan şube:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürlüğü  
+**Atanan ana birim:** Ruhsat, Vize ve Başvuru Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 **Süreç sahibi:** Ruhsat ve Vize İşlemleri Birimi  
 **Girdiler:** E-başvuru, araç/şoför/şirket belgeleri, UKOME kararı, muayene/uygunluk, ücret ve borç bilgileri.  
@@ -75,6 +83,10 @@ flowchart TD
 
 ## TU-03 — İzleme, kontrol, şikâyet ve karar uygulama
 
+**Atanan şube:** Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Toplu Taşıma Veri ve Akıllı Filo Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Toplu Taşıma İzleme ve Kontrol Birimi  
 **Girdiler:** Denetim planı, UKOME kararları, araç/hat verileri, vatandaş şikâyeti, kolluk veya kurum bildirimi.  
 **Çıktılar:** Kontrol/tespit raporu, düzeltici işlem, yetkili makama bildirim, trend ve hizmet kalite raporu.
@@ -111,6 +123,10 @@ flowchart TD
 
 ## TU-04 — Durak yeri ve durak yaşam döngüsü
 
+**Atanan şube:** Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Hat, Sefer ve Kapasite Planlama Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Hizmet ihtiyacı sahibi:** Toplu Taşıma  
 **Trafik ve fiziksel varlık sahibi:** Ulaşım Planlama  
 **Dijital ekipman sahibi:** Akıllı Ulaşım Sistemleri  
@@ -144,6 +160,10 @@ flowchart TD
 ---
 
 ## TU-05 — Hat veya işletmeci performans gözden geçirmesi
+
+**Atanan şube:** Toplu Taşıma Planlama ve İşletme Şube Müdürlüğü  
+**Atanan ana birim:** Toplu Taşıma Veri ve Akıllı Filo Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 ```mermaid
 flowchart LR

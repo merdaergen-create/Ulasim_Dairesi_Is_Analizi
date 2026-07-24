@@ -6,6 +6,10 @@ Bu dosya, kaynak formlar ve görev belgelerinde ayrı belge ve karar mantığı 
 
 ## TU-06 — Ticari plaka tahsis, devir ve iptal süreci
 
+**Atanan şube:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürlüğü  
+**Atanan ana birim:** Ticari Araç ve Özel İzinler Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Birimi  
 **Karar paydaşları:** UKOME, Mali Hizmetler, Hukuk Müşavirliği ve ilgili kamu kurumları  
 **Kaynak dayanağı:** Ticari Plaka Tahsis Belgesi Başvuru Formu, Ticari Plaka Devir Belgesi Başvuru Formu ve Yetki Belgesi İptali Başvuru Formu.  
@@ -42,6 +46,10 @@ flowchart TD
 ---
 
 ## TU-07 — Servis aracı izin belgesi süreci
+
+**Atanan şube:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürlüğü  
+**Atanan ana birim:** Ticari Araç ve Özel İzinler Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 **Süreç sahibi:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Birimi  
 **Hizmet türleri:** S plaka okul servisi, S plaka personel servisi, özel plaka okul/personel servisi ve müşteri servisi.  
@@ -81,6 +89,10 @@ flowchart TD
 
 ## TU-08 — Yük nakli ve özel taşıma izin süreci
 
+**Atanan şube:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürlüğü  
+**Atanan ana birim:** Ticari Araç ve Özel İzinler Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Birimi  
 **Kapsam:** Yük nakli, mevsimlik tarım işçisi taşımacılığı ve özel/geçici taşıma izinleri.  
 **Kaynak dayanağı:** Yük Nakli İzin Belgesi Başvuru Formu ve Mevsimlik Tarım İşçisi Taşımacılığı İzin Belgesi Başvuru Formu.  
@@ -117,6 +129,10 @@ flowchart TD
 ---
 
 ## TU-09 — Ticari araç uygunluk, çalışma ruhsatı ve vize yenileme süreci
+
+**Atanan şube:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Şube Müdürlüğü  
+**Atanan ana birim:** Ruhsat, Vize ve Başvuru Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 **Süreç sahibi:** Ulaşım Ruhsat ve Ticari Araç İşlemleri Birimi  
 **Kaynak dayanağı:** Ticari Plakalı Araç Uygunluk Kontrol Formu ve Ticari Araçların M/T Plaka Çalışma Ruhsatı Başvuru Formu.  

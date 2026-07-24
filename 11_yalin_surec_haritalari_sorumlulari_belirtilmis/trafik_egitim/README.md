@@ -6,6 +6,10 @@ Bu bölüm Trafik Eğitim Şube Müdürlüğünün eğitim programı, katılımc
 
 ## TE-01 — Trafik eğitimi ve farkındalık programı
 
+**Atanan şube:** Ulaşım Planlama Şube Müdürlüğü  
+**Atanan ana birim:** Trafik Güvenliği ve Eğitim Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** Trafik Eğitim Şube Müdürlüğü  
 **Girdiler:** Hedef grup talebi, kaza/risk verisi, okul/kurum takvimi, eğitim ihtiyacı, müfredat ve kapasite.  
 **Çıktılar:** Yıllık eğitim programı, materyal, katılım kaydı, ön/son test, memnuniyet ve faaliyet raporu.
@@ -37,6 +41,10 @@ flowchart TD
 
 ## TE-02 — Trafik eğitim parkı seans ve güvenlik işletimi
 
+**Atanan şube:** Ulaşım Planlama Şube Müdürlüğü  
+**Atanan ana birim:** Trafik Güvenliği ve Eğitim Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **İşletme sahibi:** Trafik Eğitim Şube Müdürlüğü  
 **Fiziksel proje/bakım paydaşları:** Ulaşım Planlama, Fen İşleri, Destek Hizmetleri ve İSG  
 **Girdiler:** Onaylı eğitim programı, seans listesi, park kapasitesi, ekipman ve güvenlik kontrolü.  
@@ -67,6 +75,10 @@ flowchart TD
 ---
 
 ## TE-03 — Eğitim materyali hazırlama ve yayımlama
+
+**Atanan şube:** Ulaşım Planlama Şube Müdürlüğü  
+**Atanan ana birim:** Trafik Güvenliği ve Eğitim Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
 
 ```mermaid
 flowchart LR

@@ -6,6 +6,10 @@ Bu bölüm evrak, ihale, sözleşme, hakediş, ödeme, bütçe, performans, faal
 
 ## ID-01 — İhale ve satın alma dosyası
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** İhale, Sözleşme ve Ödeme Dosyası Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler Şefliği  
 **Teknik içerik sahibi:** İhtiyaç sahibi şube  
 **Hesap verebilir:** Harcama yetkilisi  
@@ -14,24 +18,24 @@ Bu bölüm evrak, ihale, sözleşme, hakediş, ödeme, bütçe, performans, faal
 
 ```mermaid
 flowchart TD
-    A([Onaylı ihtiyaç<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]) --> B[Teknik şube: kapsam, şartname ve miktar<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    B --> C[Teknik şube: yaklaşık maliyet girdileri<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    C --> D[İdari İşler: bütçe, ödenek ve satın alma yöntemi kontrolü<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi]
-    D --> E{Dosya tam ve mevzuata uygun mu?<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi}
-    E -- Hayır --> F[Eksik/düzeltme listesi<br/>Sorumlu: İç Kontrol ve Risk Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    A([Onaylı ihtiyaç<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]) --> B[Teknik şube: kapsam, şartname ve miktar<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    B --> C[Teknik şube: yaklaşık maliyet girdileri<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    C --> D[İdari İşler: bütçe, ödenek ve satın alma yöntemi kontrolü<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    D --> E{Dosya tam ve mevzuata uygun mu?<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    E -- Hayır --> F[Eksik/düzeltme listesi<br/>Sorumlu: İç Kontrol ve Risk Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
     F --> B
-    E -- Evet --> G{İhale/temin türü<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    G -- Açık/Diğer ihale --> H[İhale onayı, ilan/davet ve EKAP süreci<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi]
-    G -- Doğrudan temin --> I[Onay, piyasa fiyat araştırması ve EKAP kaydı<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi]
-    H --> J[Tekliflerin alınması ve açılması<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    I --> K[Teslim/sipariş kararı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    J --> L[İhale komisyonu değerlendirmesi<br/>Sorumlu: Yetkili İhale Komisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    L --> M{Geçerli ve uygun teklif var mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    M -- Hayır --> N[İptal veya yeniden ihale kararı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
+    E -- Evet --> G{İhale/temin türü<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    G -- Açık/Diğer ihale --> H[İhale onayı, ilan/davet ve EKAP süreci<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    G -- Doğrudan temin --> I[Onay, piyasa fiyat araştırması ve EKAP kaydı<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    H --> J[Tekliflerin alınması ve açılması<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    I --> K[Teslim/sipariş kararı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    J --> L[İhale komisyonu değerlendirmesi<br/>Sorumlu: Yetkili İhale Komisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    L --> M{Geçerli ve uygun teklif var mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    M -- Hayır --> N[İptal veya yeniden ihale kararı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
     N --> B
-    M -- Evet --> O[Karar, bildirim ve sözleşmeye davet<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    O --> P[Sözleşme ve teminat kontrolleri<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    P --> Q[İş programı ve teknik kontrol ekibine devir<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
+    M -- Evet --> O[Karar, bildirim ve sözleşmeye davet<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    O --> P[Sözleşme ve teminat kontrolleri<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    P --> Q[İş programı ve teknik kontrol ekibine devir<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
     K --> Q
 ```
 
@@ -43,6 +47,10 @@ flowchart TD
 
 ## ID-02 — Sözleşme, hakediş, muayene-kabul ve ödeme
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** İhale, Sözleşme ve Ödeme Dosyası Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler — idari ve mali dosya  
 **Teknik kontrol sahibi:** İlgili teknik şube  
 **Girdiler:** Sözleşme, iş programı, teslim/saha kayıtları, metraj, faturalar, teminat ve kontrol raporları.  
@@ -50,27 +58,27 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([Sözleşme imzalandı<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]) --> B[İdari İşler: sözleşme takvimi, teminat ve yükümlülük kaydı<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    B --> C[Teknik şube: işe başlama ve kontrol planı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    C --> D[Yüklenici uygulama/teslim<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    D --> E[Teknik kontrol: miktar, kalite, süre ve kanıt<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    E --> F{İş uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    F -- Hayır --> G[Eksik/kusurlu iş tutanağı ve düzeltme<br/>Sorumlu: İç Kontrol ve Risk Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    A([Sözleşme imzalandı<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]) --> B[İdari İşler: sözleşme takvimi, teminat ve yükümlülük kaydı<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    B --> C[Teknik şube: işe başlama ve kontrol planı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    C --> D[Yüklenici uygulama/teslim<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    D --> E[Teknik kontrol: miktar, kalite, süre ve kanıt<br/>Sorumlu: İlgili Teknik Şubenin Yalın Pozisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    E --> F{İş uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    F -- Hayır --> G[Eksik/kusurlu iş tutanağı ve düzeltme<br/>Sorumlu: İç Kontrol ve Risk Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
     G --> D
-    F -- Evet --> H[Hakediş/metraj veya teslim raporu<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    H --> I[İdari İşler: sözleşme, süre, fiyat farkı, kesinti ve teminat kontrolü<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    I --> J{Belgeler tam mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    J -- Hayır --> K[Eksik evrak bildirimi<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    F -- Evet --> H[Hakediş/metraj veya teslim raporu<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    H --> I[İdari İşler: sözleşme, süre, fiyat farkı, kesinti ve teminat kontrolü<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    I --> J{Belgeler tam mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    J -- Hayır --> K[Eksik evrak bildirimi<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
     K --> H
-    J -- Evet --> L[Bağımsız muayene-kabul komisyonu<br/>Sorumlu: Yetkili Muayene ve Kabul Komisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    L --> M{Kabul uygun mu?<br/>Sorumlu: Yetkili Muayene ve Kabul Komisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi}
+    J -- Evet --> L[Bağımsız muayene-kabul komisyonu<br/>Sorumlu: Yetkili Muayene ve Kabul Komisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    L --> M{Kabul uygun mu?<br/>Sorumlu: Yetkili Muayene ve Kabul Komisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
     M -- Hayır --> G
-    M -- Evet --> N[Fatura ve ödeme emri belgesi<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    N --> O[Mali kontrol ve ödeme<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    O --> P{Son hakediş/kabul mü?<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği}
+    M -- Evet --> N[Fatura ve ödeme emri belgesi<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    N --> O[Mali kontrol ve ödeme<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    O --> P{Son hakediş/kabul mü?<br/>Sorumlu: Hakediş ve Ödeme Dosyası Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı}
     P -- Hayır --> D
-    P -- Evet --> Q[Geçici/kesin kabul ve teminat iade takvimi<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    Q --> R[Sözleşme performans ve kapanış dosyası<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    P -- Evet --> Q[Geçici/kesin kabul ve teminat iade takvimi<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    Q --> R[Sözleşme performans ve kapanış dosyası<br/>Sorumlu: Sözleşme ve Teminat Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
 ```
 
 **Kontroller:** Sözleşme kilometre taşları, teminat bitiş uyarısı, gecikme/ceza kontrolü, hakediş–metraj eşleşmesi, kabul komisyonu bağımsızlığı.
@@ -79,6 +87,10 @@ flowchart TD
 
 ## ID-03 — Bütçe, performans programı ve faaliyet raporu
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** Bütçe, Performans ve Raporlama Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler Şefliği  
 **Veri sahibi:** Her şube  
 **Girdiler:** Stratejik plan, hedefler, faaliyetler, bütçe ihtiyaçları, gerçekleşmeler, KPI ve mali veriler.  
@@ -86,23 +98,23 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A([Bütçe/rapor dönemi başlar<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi]) --> B[İdari İşler: takvim, şablon ve veri sözlüğü<br/>Sorumlu: Bütçe ve Performans Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    B --> C[Şubeler: hedef, faaliyet, bütçe ve KPI girişi<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi]
-    C --> D[Otomatik tamlık ve tutarlılık kontrolü<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    D --> E{Veriler tam ve tutarlı mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    E -- Hayır --> F[Düzeltme talebi<br/>Sorumlu: İç Kontrol ve Risk Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    A([Bütçe/rapor dönemi başlar<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]) --> B[İdari İşler: takvim, şablon ve veri sözlüğü<br/>Sorumlu: Bütçe ve Performans Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    B --> C[Şubeler: hedef, faaliyet, bütçe ve KPI girişi<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    C --> D[Otomatik tamlık ve tutarlılık kontrolü<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    D --> E{Veriler tam ve tutarlı mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    E -- Hayır --> F[Düzeltme talebi<br/>Sorumlu: İç Kontrol ve Risk Sorumlusu<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
     F --> C
-    E -- Evet --> G[İdari İşler: konsolidasyon ve önceki dönem karşılaştırması<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    G --> H[Daire Başkanı: öncelik ve kaynak değerlendirmesi<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü / Ulaşım Dairesi Başkanı<br/>Birim: Şube Müdürlüğü Yönetimi]
-    H --> I{Revizyon gerekli mi?<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi}
+    E -- Evet --> G[İdari İşler: konsolidasyon ve önceki dönem karşılaştırması<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    G --> H[Daire Başkanı: öncelik ve kaynak değerlendirmesi<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü / Ulaşım Dairesi Başkanı<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    H --> I{Revizyon gerekli mi?<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
     I -- Evet --> C
-    I -- Hayır --> J[Mali Hizmetler/Strateji birimine gönderim<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    J --> K[Görüş ve bütçe sınırı<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi]
-    K --> L{Uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
+    I -- Hayır --> J[Mali Hizmetler/Strateji birimine gönderim<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    J --> K[Görüş ve bütçe sınırı<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    K --> L{Uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
     L -- Hayır --> G
-    L -- Evet --> M[Onaylı bütçe ve performans hedefleri<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi]
-    M --> N[Aylık gerçekleşme ve sapma takibi<br/>Sorumlu: Faaliyet Raporlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
-    N --> O[Yıl sonu faaliyet raporu<br/>Sorumlu: Faaliyet Raporlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği]
+    L -- Evet --> M[Onaylı bütçe ve performans hedefleri<br/>Sorumlu: İhale ve Satın Alma Koordinatörü<br/>Birim: İhale, Sözleşme ve Ödeme Dosyası Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    M --> N[Aylık gerçekleşme ve sapma takibi<br/>Sorumlu: Faaliyet Raporlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
+    N --> O[Yıl sonu faaliyet raporu<br/>Sorumlu: Faaliyet Raporlama Uzmanı<br/>Birim: Daire Geneli Ortak Uzmanlık Desteği<br/>Şube: Ulaşım Dairesi Başkanlığı]
 ```
 
 **Önerilen KPI:** Zamanında veri giriş oranı, bütçe sapması, hedef gerçekleşme oranı, manuel düzeltme sayısı, rapor üretim süresi.
@@ -111,27 +123,31 @@ flowchart TD
 
 ## ID-04 — Evrak, EBYS, izin ve arşiv
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** EBYS, Taşınır, Personel ve İç Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler Şefliği  
 **Girdiler:** Gelen/giden evrak, olur, görev/izin/rapor, dosya planı ve kurum yazışmaları.  
 **Çıktılar:** Doğru birime yönlendirilmiş evrak, işlem izi, cevap, izin kaydı ve arşiv.
 
 ```mermaid
 flowchart TD
-    A([Gelen evrak veya iç yazışma<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]) --> B[EBYS kayıt, güvenlik ve kişisel veri sınıflandırması<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    B --> C[Konu, süre ve yetkili birim belirleme<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    C --> D[İlgili şubeye elektronik havale<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    D --> E[Şube işlem sahibi ve sorumlu personel<br/>Sorumlu: Personel ve İzin İşleri Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    E --> F{Görüş/onay başka birimden gerekli mi?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    F -- Evet --> G[EBYS üzerinden görüş talebi<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    G --> H[Görüşlerin konsolidasyonu<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    F -- Hayır --> I[Cevap/olur/işlem taslağı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
+    A([Gelen evrak veya iç yazışma<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]) --> B[EBYS kayıt, güvenlik ve kişisel veri sınıflandırması<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    B --> C[Konu, süre ve yetkili birim belirleme<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    C --> D[İlgili şubeye elektronik havale<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    D --> E[Şube işlem sahibi ve sorumlu personel<br/>Sorumlu: Personel ve İzin İşleri Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    E --> F{Görüş/onay başka birimden gerekli mi?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    F -- Evet --> G[EBYS üzerinden görüş talebi<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    G --> H[Görüşlerin konsolidasyonu<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    F -- Hayır --> I[Cevap/olur/işlem taslağı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
     H --> I
-    I --> J[Yetkili kontrol ve e-imza<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    J --> K[Giden evrak veya iç karar<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    K --> L[Saklama planı, erişim seviyesi ve arşiv<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    L --> M{Yasal/idari süre içinde tamamlandı mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    M -- Hayır --> N[Gecikme bildirimi ve escalation<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    M -- Evet --> O([Dosya kapanışı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi])
+    I --> J[Yetkili kontrol ve e-imza<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    J --> K[Giden evrak veya iç karar<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    K --> L[Saklama planı, erişim seviyesi ve arşiv<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    L --> M{Yasal/idari süre içinde tamamlandı mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    M -- Hayır --> N[Gecikme bildirimi ve escalation<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    M -- Evet --> O([Dosya kapanışı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü])
 ```
 
 **Temel kontrol:** Şubeler paralel evrak kayıt defteri oluşturmamalı; EBYS tek resmî kayıt noktası olmalıdır.
@@ -140,29 +156,33 @@ flowchart TD
 
 ## ID-05 — Taşınır, ambar, zimmet ve sayım
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** EBYS, Taşınır, Personel ve İç Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 **Süreç sahibi:** İdari İşler / Taşınır Kayıt Yetkilisi  
 **Girdiler:** Muayene-kabul edilmiş mal, TİF, talep, zimmet, devir ve sayım listesi.  
 **Çıktılar:** Giriş-çıkış kaydı, zimmet, ambar bakiyesi, sayım tutanağı, hurda/kayıp işlemi ve konsolide cetvel.
 
 ```mermaid
 flowchart TD
-    A([Mal teslimi veya mevcut taşınır işlemi<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]) --> B[Muayene-kabul ve belge kontrolü<br/>Sorumlu: Yetkili Muayene ve Kabul Komisyonu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    B --> C{Teslim uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    C -- Hayır --> D[Ret/iade veya eksik teslim tutanağı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    C -- Evet --> E[Taşınır işlem fişi ve varlık kaydı<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    E --> F[Etiket/seri no ve ambar konumu<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    F --> G{Kullanıcıya teslim mi?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    G -- Evet --> H[Talep/onay ve zimmet<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    G -- Hayır --> I[Ambar stok kaydı<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    H --> J[Kullanıcı/teknik şube koruma sorumluluğu<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    I --> K[Periyodik stok ve çevre koşulu kontrolü<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    J --> L[Devir, iade, kayıp, arıza veya hurda bildirimi<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    K --> M[Yıl sonu/ara sayım<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
+    A([Mal teslimi veya mevcut taşınır işlemi<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]) --> B[Muayene-kabul ve belge kontrolü<br/>Sorumlu: Yetkili Muayene ve Kabul Komisyonu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    B --> C{Teslim uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    C -- Hayır --> D[Ret/iade veya eksik teslim tutanağı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    C -- Evet --> E[Taşınır işlem fişi ve varlık kaydı<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    E --> F[Etiket/seri no ve ambar konumu<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    F --> G{Kullanıcıya teslim mi?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    G -- Evet --> H[Talep/onay ve zimmet<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    G -- Hayır --> I[Ambar stok kaydı<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    H --> J[Kullanıcı/teknik şube koruma sorumluluğu<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    I --> K[Periyodik stok ve çevre koşulu kontrolü<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    J --> L[Devir, iade, kayıp, arıza veya hurda bildirimi<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    K --> M[Yıl sonu/ara sayım<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
     L --> M
-    M --> N[Fiziki kayıt ile sistem karşılaştırması<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    N --> O{Fark var mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    O -- Evet --> P[Sayım farkı inceleme ve mevzuat işlemi<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    O -- Hayır --> Q[Konsolide cetvel ve kapanış<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
+    M --> N[Fiziki kayıt ile sistem karşılaştırması<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    N --> O{Fark var mı?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    O -- Evet --> P[Sayım farkı inceleme ve mevzuat işlemi<br/>Sorumlu: Taşınır Kayıt ve Ambar Sorumlusu<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    O -- Hayır --> Q[Konsolide cetvel ve kapanış<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
     P --> Q
 ```
 
@@ -172,16 +192,20 @@ flowchart TD
 
 ## ID-06 — Yönetmelik, yönerge ve görev tanımı değişikliği
 
+**Atanan şube:** İdari ve Mali İşler Şube Müdürlüğü  
+**Atanan ana birim:** EBYS, Taşınır, Personel ve İç Kontrol Birimi  
+**Organizasyon kaynağı:** `14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md`
+
 ```mermaid
 flowchart TD
-    A[Mevzuat/organizasyon/süreç değişikliği<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi] --> B[İdari İşler: etkilenen dokümanların envanteri<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    B --> C[İlgili şube: içerik ve görev etkisi<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    C --> D[Hukuk Müşavirliği: yetki ve mevzuat kontrolü<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    D --> E{Uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi}
-    E -- Hayır --> F[Revizyon ve çelişki giderme<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
+    A[Mevzuat/organizasyon/süreç değişikliği<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü] --> B[İdari İşler: etkilenen dokümanların envanteri<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    B --> C[İlgili şube: içerik ve görev etkisi<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    C --> D[Hukuk Müşavirliği: yetki ve mevzuat kontrolü<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    D --> E{Uygun mu?<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    E -- Hayır --> F[Revizyon ve çelişki giderme<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
     F --> C
-    E -- Evet --> G[Gerekli başkanlık/meclis/kurul onayı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi]
-    G --> H[Yeni revizyon, yürürlük ve mülga referansları<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi]
-    H --> I[Personel tebliği ve eğitim<br/>Sorumlu: Personel ve İzin İşleri Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
-    I --> J[Eski kopyaların arşivlenmesi ve kullanım dışı bırakılması<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: İdari ve Mali İşler Şube Müdürlüğü Yönetimi]
+    E -- Evet --> G[Gerekli başkanlık/meclis/kurul onayı<br/>Sorumlu: İdari ve Mali İşler Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    G --> H[Yeni revizyon, yürürlük ve mülga referansları<br/>Sorumlu: Doküman Kontrol ve Mevzuat Takip Uzmanı<br/>Birim: EBYS, Taşınır, Personel ve İç Kontrol Birimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    H --> I[Personel tebliği ve eğitim<br/>Sorumlu: Personel ve İzin İşleri Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    I --> J[Eski kopyaların arşivlenmesi ve kullanım dışı bırakılması<br/>Sorumlu: EBYS ve Arşiv Sorumlusu<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
 ```
