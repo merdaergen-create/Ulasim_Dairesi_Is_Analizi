@@ -1,0 +1,46 @@
+name: Süreçleri şube ve birimlere ata, 15 haritalarını güncelle
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '09_yalin_pozisyonlari/**'
+      - '11_yalin_surec_haritalari_sorumlulari_belirtilmis/**'
+      - '14_yalin_organizasyon_semasi/02_sube_birim_pozisyon_semalari.md'
+      - 'scripts/assign_processes_and_sync_maps_v3.py'
+      - '.github/workflows/assign_processes_and_sync_maps_v3.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  assign-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Depoyu al
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Süreçleri ata ve 15 haritalarını güncelle
+        run: python scripts/assign_processes_and_sync_maps_v3.py
+
+      - name: Çıktıları doğrula
+        run: |
+          grep -R -F '**Atanan şube:**' 11_yalin_surec_haritalari_sorumlulari_belirtilmis --include='*.md' >/dev/null
+          grep -R -F '**Atanan ana birim:**' 11_yalin_surec_haritalari_sorumlulari_belirtilmis --include='*.md' >/dev/null
+          grep -R -F '<br/>Birim:' 15_yalin_surec_haritalari --include='*.md' >/dev/null
+          grep -R -F '<br/>Şube:' 15_yalin_surec_haritalari --include='*.md' >/dev/null
+
+      - name: Değişiklikleri main dalına kaydet
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add 11_yalin_surec_haritalari_sorumlulari_belirtilmis 15_yalin_surec_haritalari
+          if git diff --cached --quiet; then
+            echo "Değişiklik yok."
+          else
+            git commit -m "Süreçleri şube ve birimlere ata, 15 haritalarını güncelle"
+            git push
+          fi
