@@ -18,30 +18,30 @@ Bu dosya, kaynak belgelerde yer aldığı halde mevcut `TP-01–TP-06` haritalar
 
 ```mermaid
 flowchart TD
-    A([Otopark erişim uygunluğu başvurusu<br/>Sorumlu: Yol ve Kavşak Tasarım Sorumlusu<br/>Birim: Yol, Kavşak ve Trafik Güvenliği Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]) --> B[Başvuru ve proje eklerinin kayıt altına alınması<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
-    B --> C{Zorunlu belgeler tam mı?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
-    C -- Hayır --> D[Eksik belge ve proje bildirim listesi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    A([Otopark erişim uygunluğu başvurusu<br/>Sorumlu: Yol ve Kavşak Tasarım Sorumlusu<br/>Birim: Yol, Kavşak ve Trafik Güvenliği Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]) --> B[Başvuru ve proje eklerinin kayıt altına alınması<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
+    B --> C{Zorunlu belgeler tam mı?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü}
+    C -- Hayır --> D[Eksik belge ve proje bildirim listesi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     D --> B
-    C -- Evet --> E[İmar durumu, yetki alanı ve yol sorumluluğu kontrolü<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
-    E --> F[Saha incelemesi ve mevcut trafik düzeninin tespiti<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    C -- Evet --> E[İmar durumu, yetki alanı ve yol sorumluluğu kontrolü<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
+    E --> F[Saha incelemesi ve mevcut trafik düzeninin tespiti<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     F --> G[Araç giriş-çıkış görüş mesafesi ve manevra analizi<br/>Sorumlu: Yol ve Kavşak Tasarım Sorumlusu<br/>Birim: Yol, Kavşak ve Trafik Güvenliği Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     G --> H[Yaya, bisiklet, engelli erişimi ve kaldırım sürekliliği kontrolü<br/>Sorumlu: Trafik Güvenliği ve Sürdürülebilir Ulaşım Uzmanı<br/>Birim: Yol, Kavşak ve Trafik Güvenliği Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     H --> I[Yakın kavşak, durak, sinyal, geçit ve yol güvenliği etkisi<br/>Sorumlu: Sinyalizasyon Proje ve İşletme Sorumlusu<br/>Birim: Sinyalizasyon Proje ve İşletme Birimi<br/>Şube: Trafik Hizmetleri ve Sinyalizasyon Şube Müdürlüğü]
-    I --> J{Erişim teknik olarak uygun mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
-    J -- Hayır --> K[Alternatif giriş-çıkış veya proje revizyon talebi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
-    K --> L{Revize proje sunuldu mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
-    L -- Hayır --> M[Gerekçeli ret ve dosya kapanışı<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    I --> J{Erişim teknik olarak uygun mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü}
+    J -- Hayır --> K[Alternatif giriş-çıkış veya proje revizyon talebi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
+    K --> L{Revize proje sunuldu mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü}
+    L -- Hayır --> M[Gerekçeli ret ve dosya kapanışı<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     L -- Evet --> F
-    J -- Evet --> N{UKOME veya başka kurul kararı gerekli mi?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    J -- Evet --> N{UKOME veya başka kurul kararı gerekli mi?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü}
     N -- Evet --> O[Standart teknik teklif dosyasının hazırlanması<br/>Sorumlu: Teknik Proje Kontrol Mühendisi<br/>Birim: CBS ve Teknik Proje Kontrol Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
-    O --> P[UKOME/ilgili kurul karar süreci<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
-    P --> Q{Karar olumlu mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü}
+    O --> P[UKOME/ilgili kurul karar süreci<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
+    P --> Q{Karar olumlu mu?<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü}
     Q -- Hayır --> M
-    Q -- Evet --> R[Uygunluk şartları ve uygulama koşulları<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    Q -- Evet --> R[Uygunluk şartları ve uygulama koşulları<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     N -- Hayır --> R
-    R --> S[Yetkili teknik onay ve uygunluk belgesinin düzenlenmesi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
-    S --> T[Başvuru sahibine bildirim ve ilgili kurumlara dağıtım<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
-    T --> U[Gerekirse uygulama sonrası saha doğrulaması<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    R --> S[Yetkili teknik onay ve uygunluk belgesinin düzenlenmesi<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
+    S --> T[Başvuru sahibine bildirim ve ilgili kurumlara dağıtım<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
+    T --> U[Gerekirse uygulama sonrası saha doğrulaması<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     U --> V[CBS, belge ve kapanış kaydı<br/>Sorumlu: CBS ve Ulaşım Envanteri Uzmanı<br/>Birim: CBS ve Teknik Proje Kontrol Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
 ```
 

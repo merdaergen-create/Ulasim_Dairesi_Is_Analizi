@@ -89,7 +89,7 @@ flowchart LR
     E --> F{Doğru ve anlaşılır mı?<br/>Sorumlu: Trafik Eğitim ve Farkındalık Sorumlusu<br/>Birim: Trafik Güvenliği ve Eğitim Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü}
     F -- Hayır --> D
     F -- Evet --> G[Erişilebilirlik, görsel ve dil kontrolü<br/>Sorumlu: Trafik Eğitim ve Farkındalık Sorumlusu<br/>Birim: Trafik Güvenliği ve Eğitim Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
-    G --> H[Yetkili onay ve sürüm numarası<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: İdari ve Mali İşler Şube Müdürlüğü]
+    G --> H[Yetkili onay ve sürüm numarası<br/>Sorumlu: Ulaşım Planlama Şube Müdürü<br/>Birim: Şube Müdürlüğü Yönetimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     H --> I[Yayımlama/dağıtım<br/>Sorumlu: Trafik Eğitim ve Farkındalık Sorumlusu<br/>Birim: Trafik Güvenliği ve Eğitim Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
     I --> J[Geri bildirim ve periyodik güncelleme<br/>Sorumlu: Trafik Eğitim ve Farkındalık Sorumlusu<br/>Birim: Trafik Güvenliği ve Eğitim Birimi<br/>Şube: Ulaşım Planlama Şube Müdürlüğü]
 ```
